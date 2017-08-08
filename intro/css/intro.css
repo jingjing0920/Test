@@ -36,7 +36,7 @@ i,em{font-style: normal;}
 .intro-p3{ padding:20px 0; background-image: url(../img/p3-bg.jpg); background-size: 100%;}
 .intro-p4{padding:20px 0 30px 0;}
 .intro-p4 .pc{ margin-bottom: 10px; }
-.arrow-down{display: inline-block; width: 20px; height: 20px; position: absolute; bottom: 10px; left:50%; margin-left: -10px; background: url(../img/arrow-down.png) no-repeat; background-size: cover;}
+.arrow-down{display: inline-block; width: 20px; height: 20px; position: absolute; bottom: 20px; left:50%; margin-left: -10px; background: url(../img/arrow-down.png) no-repeat; background-size: cover;}
 
 
 
