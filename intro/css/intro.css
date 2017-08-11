@@ -38,7 +38,21 @@ i,em{font-style: normal;}
 .intro-p4 .pc{ margin-bottom: 10px; }
 .arrow-down{display: inline-block; width: 20px; height: 20px; position: absolute; bottom: 20px; left:50%; margin-left: -10px; background: url(../img/arrow-down.png) no-repeat; background-size: cover;}
 
-
+/* 增加定制 2017-08-11 */
+.intro-p6{ background: url(../img/bg2.jpg) center bottom no-repeat; background-size: 100%; margin-bottom: 15px;}
+.intro-p6 .intro-p6-inner{background-color: rgba(0,0,0,.7); padding:50px 20px; text-align: center; }
+.intro-btn{display: inline-block; padding:0 20px; height: 44px; line-height: 42px; border:1px solid #fff; background:rgba(0,0,0,.3); font-size: 14px; color: #fff; text-align: center; -webkit-border-radius: 22px; border-radius: 22px;  }
+.intro-foot{padding-bottom: 15px }
+.dpl-ft-bar { position: fixed; z-index: 99; right: 0; left: 0; bottom: 0; height: 44px; width: 100%; border-bottom: 0; background-color: #fff; -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2); box-shadow: 0 0 1px rgba(0,0,0,.2); }
+.dpl-ft-btn{border:0 none;}
+.dpl-ft-cell2{width: 100%; display: table;}
+.dpl-ft-cell2 a { display: table-cell;  height: 44px; width: 50%; text-align: center; vertical-align: middle;}
+.dpl-btn-submit{ display: block; height: 44px; line-height: 44px; background:#57D07F; color: #FFF;  text-align: center; font-size: 15px;}
+.dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
+.dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
+.btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(bordeaux/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
+.dpl-footer{ background:rgba(0,0,0,.5); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
+.dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(bordeaux/img/footer-label.png) no-repeat; background-size: contain; }
 
 
 
