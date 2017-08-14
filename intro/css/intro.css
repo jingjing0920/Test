@@ -36,9 +36,9 @@ i,em{font-style: normal;}
 .intro-p3{ padding:20px 0; background-image: url(../img/p3-bg.jpg); background-size: 100%;}
 .intro-p4{padding:20px 0 30px 0;}
 .intro-p4 .pc{ margin-bottom: 10px; }
-.arrow-down{display: inline-block; width: 20px; height: 20px; position: absolute; bottom: 20px; left:50%; margin-left: -10px; background: url(../img/arrow-down.png) no-repeat; background-size: cover;}
 
-/* 增加定制 2017-08-14 */
+/* 增加下单按钮 2017-08-14 */
+.arrow-down{display: inline-block; width: 20px; height: 20px; position: absolute; bottom: 70px; left:50%; margin-left: -10px; background: url(../img/arrow-down.png) no-repeat; background-size: cover;}
 .intro-foot{padding-bottom: 44px; }
 .dpl-ft-bar { position: fixed; z-index: 99; right: 0; left: 0; bottom: 0; height: 44px; width: 100%; border-bottom: 0; background-color: #fff; -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2); box-shadow: 0 0 1px rgba(0,0,0,.2); }
 .dpl-ft-btn{border:0 none;}
