@@ -2,176 +2,553 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>6人游旅行网</title>
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"> 
+<title>尘嚣之下的寻美归真之旅</title>
+<meta name="keywords" content="深度策划 日本">
+<meta name="description" content="尘嚣之下的寻美归真之旅-日本中部7晚8天美景之旅">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
-<meta name="description" content="6人游旅行网-定制旅游就找6人游">
-<meta name="keywords" content="6人游旅行网">
-<link rel="stylesheet" type="text/css" href="intro/css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="intro/css/swiper.min.css"> 
-<link rel="stylesheet" type="text/css" href="intro/css/intro.css">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="common/css/animate.min.css">  
+<style type="text/css">
+    * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
+    *:before, *:after { box-sizing: border-box; max-height: 100000px; }
+    body, html { width: 100%; height: 100%; }
+    html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
+    html {/* font-size: 100px; */ }
+    body{font-size: .28rem; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #000b2b; color: #fff;  margin:0 auto; }
+    img{ border: 0;vertical-align: middle;}
+    a { background-color: transparent; text-decoration: none; }
+    a:active, a:hover { outline: 0; text-decoration: none;}
+    ul,li{list-style: none;}
+    i,em{font-style: normal;}
+    button{border:0 none;outline: 0;}
+    .clearfix { *zoom:1;}
+    .clearfix:after { display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; content: "."; }
+    .clear { clear: both; height: 0; font-size: 1px; line-height: 0px; }
+    /* common */
+    .dpl-ft-bar~.dpl-container { padding-bottom: 58px }
+    .dpl-ft-bar { position: fixed; z-index: 99; right: 0; left: 0; bottom: 0; height: 44px; width: 100%; border-bottom: 0; background-color: #fff; -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2); box-shadow: 0 0 1px rgba(0,0,0,.2); }
+    .dpl-ft-btn{border:0 none;}
+    .dpl-ft-cell2{width: 100%; display: table;}
+    .dpl-ft-cell2 a { display: table-cell;  height: 44px; width: 50%; text-align: center; vertical-align: middle;}
+    .dpl-btn-submit{ display: block; height: 44px; line-height: 44px; background:#57D07F; color: #FFF;  text-align: center; font-size: 15px;}
+    .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
+    .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
+    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(japan/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
+    .dpl-footer{ text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: 0; padding-bottom: .7rem; }
+    .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(japan/img/footer-label.png) no-repeat; background-size: contain; }
+    /* actionsheet */
+    .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
+    .ft-actionsheet.show { pointer-events: inherit; opacity: 1; }
+    .ft-actionsheet.show .ft-actionsheet-cnt { -webkit-transform: translateY(0); -webkit-transition-delay: 0.3s; }
+    .ft-actionsheet-cnt { font-size: 18px; position: fixed; bottom: 0; padding: 0 8px; width: 100%; box-sizing: border-box; text-align: center; -webkit-transform: translateY(100%); -webkit-transition-property: all; -webkit-transition-timing-function: ease-out; -webkit-transition-duration: 0.3s; }
+    .ft-actionsheet button, .ft-actionsheet h4 { background: rgba(255, 255, 255, 0.95); display: block; width: 100%; color: #0079ff; box-sizing: border-box; }
+    .ft-actionsheet button { line-height: 44px; height: 44px; font-size: .32rem; }
+    .ft-actionsheet h4 { line-height: 24px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; }
+    .ft-actionsheet button:not(:last-child) { border-top: 1px #ccc solid; }
+    .ft-actionsheet button:last-child { margin: 8px 0; border-radius: 3px; }
+    .ft-actionsheet button:nth-last-child(2) { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+    .ft-actionsheet button:active { opacity: 0.95; }
+    .ft-actionsheet h4 { font-size: 14px; color: #8a8a8a; }
+    .ft-actionsheet .ft-actionsheet-del { color: #fd472b; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
+    }
+    /* content */
+    .dpl-body{ height: 100%; position: relative; }
+    .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
+    .arrow-box{position: absolute;bottom: -40px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
+    #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 24px; height: 20px; z-index: 999;}
+    @-webkit-keyframes start {
+    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+    60% {opacity: 1;-webkit-transform: translate(0,0);}
+    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+    }
+    @-moz-keyframes start {
+        0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+        60% {opacity: 1;-moz-transform: translate(0,0);}
+        100% {opacity: 0;-moz-transform: translate(0,-8px);}
+    }
+    @keyframes start {
+        0%,30% {opacity: 0;transform: translate(0,10px);}
+        60% {opacity: 1;transform: translate(0,0);}
+        100% {opacity: 0;transform: translate(0,-8px);}
+    }
+    .swiper-container {width: 100%; height: 100%;}
+    .swiper-slide {text-align: center;font-size: 18px;}
+    .japan-container .slide1{ background: url(japan/img/bg-banner.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide2{ background: url(japan/img/bg-design.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide3{ background: url(japan/img/bg-hl-01.jpg) center center no-repeat;background-size: cover; } 
+    .japan-container .slide4{ background: url(japan/img/bg-hl-02.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide5{ background:#372f05;}
+    .japan-container .slide6{ background: url(japan/img/bg-hl-04.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide7{ background: url(japan/img/bg-hl-05.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide8{ background: url(japan/img/bg-hl-06.jpg) center center no-repeat;background-size: cover; }
+    .japan-container .slide9{ background: url(japan/img/bg-trip.jpg) center center no-repeat;background-size: cover; } 
+    .japan-container .slide10{ background: url(japan/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
+    .p-japan1-1{ width: 1.66rem; height: 6.36rem; margin-top: 1.8rem; position: relative; z-index: 5; }
+    .p-japan1-2{ width: 100%; position: relative; margin-top: -1.66rem; z-index: 1; }
+    .s2-text{padding:2.6rem 1.25rem 0 1.25rem; text-align: center; font-size: .28rem; line-height: .46rem;}
+    .s3-box{padding-top: 2.2rem; overflow: hidden;}
+    .s3-box .p-japan3-1{ float: left; width: 1.2rem; height: 4rem; margin-left: .8rem; }
+    .s3-box .p-japan3-2{ float: right; width: 3.28rem; height: 5.12rem; margin-right: .8rem; margin-top: .4rem; }
+    .s4-box{ position: absolute; bottom: 1.6rem;  }
+    .s4-box .p-japan4-1{ width: 100%; margin-bottom: .3rem; }
+    .s4-box .p-japan4-2{ width: 100%;}
+    .s5-box{ padding: .6rem .4rem .6rem .4rem; overflow: hidden; }
+    .s5-box .p-japan5-1{ float: right; width: 1.3rem; height: 4rem; }
+    .s5-box .p-japan5-2{ float: left; width: 4.82rem; height: 4.4rem; }
+    .p-japan5-3{  width: 100%;}
+    .s6-box{ padding-top: 1.8rem; overflow: hidden; }
+    .s6-box .p-japan6-1{  width: 100%;margin-bottom: .3rem; }
+    .s6-box .p-japan6-2{  width: 100%; }
+    .s7-box{ padding: 1.2rem .6rem 0 .8rem; overflow: hidden; }
+    .s7-box .p-japan7-1{ float: left; width: .76rem; height: 2.96rem; margin-top: .5rem; }
+    .s7-box .p-japan7-2{ float: right; width: 4.1rem; height: 3.72rem; }
+    .s8-box{ padding-top: 1.0rem; overflow: hidden; }
+    .s8-box .p-japan8-1{  width: 100%; margin-bottom: .3rem; }
+    .s8-box .p-japan8-2{  width: 100%; }
+    .s-title{ text-align: center; padding-top: 1.2rem; }
+    .s-title span{ display: block; font-size: .48rem; color: #fff; line-height: .5rem; }
+    .s-title em{display: inline-block; height: 10px; border-top: 1px solid #fff; width: 1.5rem;}
+    .dpl-trip-detail{padding-top: .8rem;}
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
+    .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
+    .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
+    .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #ff9d14; }
+    .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden; }
+    .case-slide.swiper-slide-active{opacity: 1;}
+    .slide-case{/* height: 7.6rem; */ color: #666;}
+    .case-img{ position: relative; }
+    .case-img img{ width: 100%; height: auto; }
+    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #ff9d14; color: #fff; font-size: .24rem; text-align: center; }
+    .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
+    .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
+    .case-line{padding:.25rem 0; text-align: center;}
+    .case-line-box{ overflow: hidden; text-align: center; display: inline-block; }
+    .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
+    .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
+    .case-line-box .line-item:before{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; left: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
+    .case-line-box .line-item .line-dot{ display: block; }
+    .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
+    .case-line-box .line-item .line-name{ font-size: .2rem; }
+    .case-desc{  padding:0 .3rem .3rem .3rem; text-align: left; height: 2.4rem; }
+    .case-desc p{ font-size: .24rem; }
+    .dpl-price-box{ padding:.7rem .4rem .2rem .4rem; }
+    .dpl-price-box .dpl-price-item{ border:1px solid #fff; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #333; font-size: .3rem; background: #fff; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{ text-align: center; font-size: .24rem; color: #fff; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#fff; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; font-size: .2rem; color: #fff; line-height: .24rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #fff; margin-top: .1rem; }
+</style>
+<script type="text/javascript">
+    (function() {
+        function refreshRem() {
+            var width = docEl.getBoundingClientRect().width;
+            rem = width / (BASE_WIDTH / ROOT_FONT_SIZE);
+            docEl.style.fontSize = rem + "px";
+        }
+        var tid = null, docEl = document.documentElement, BASE_WIDTH = 750, ROOT_FONT_SIZE = 100;
+        refreshRem();
+         window.addEventListener("resize", function() {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }, false);
+    })();
+</script>
+<script src="/statics/js/jquery.min.js"></script>
 </head>
-<body class="intro-bg">
-    <div class="intro-container">
-        <!-- 6renyou -->
-        <div class="intro-p1">
-            <div class="intro-index">
-                <div class="logo">
-                    <div class="gw gw-tit" data-scroll-reveal="enter top over 0.5s"><img src="intro/img/logo_01.png"></div>
-                    <div class="gw gw-tit" data-scroll-reveal="enter bottom over 0.5s"><img src="intro/img/logo_02.png"></div>
+<body class="dpl-body">
+    <div class="dpl-wrapper">
+        <!-- 底部固定浮动 -->
+        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2" style="margin-bottom: 14px;">
+            <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
+            <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
+        </div>
+        <div class="dpl-container">
+            <div class="swiper-container japan-container">
+                <div class="swiper-wrapper">
+                    <!--slide1-->
+                    <section class="swiper-slide slide1">
+                        <img class="ani p-japan1-1" src="japan/img/banner-title.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        <img class="ani p-japan1-2" src="japan/img/banner-pic.jpg" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
+                    </section>
+                    <!--slide2-->
+                    <section class="swiper-slide slide2">
+                        <div class="ani s2-text" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3">
+                            <p><日本></p>
+                            <p>一个需要细细品味，慢慢揣摩的国家</p>
+                            <p>有些地方走过一次</p>
+                            <p>便可在内心深处画一个句号</p>
+                            <p>然而</p>
+                            <p>日本却是一个让人欲罢不能的地方</p>
+                            <p>每个看似句号的结束点</p>
+                            <p>却总能带来新的惊喜和惊叹</p>
+                            <p>变成下一个行程的叹号</p>
+                            <p>美景亦有/美食亦有</p>
+                            <p>......</p>
+                            <p>还有一种看似相识</p>
+                            <p>却别有韵味的唐朝情节深刻其中</p>
+                            <p>我想</p>
+                            <p>对日本的眷恋也许来自于内心深处</p>
+                            <p>对于唐朝时的憧憬</p>
+                            <p>街头巷尾总能让你发现</p>
+                            <p>那么一丝丝古风遗韵，恬静淡然</p>
+                        </div>
+                    </section>
+                    <!--slide3-->
+                    <section class="swiper-slide slide3">
+                        <div class="s3-box">
+                            <img class="ani p-japan3-1" src="japan/img/title-01.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                            <img class="ani p-japan3-2" src="japan/img/text-02.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
+                        </div>
+                    </section>
+                    <!--slide4-->
+                    <section class="swiper-slide slide4">
+                        <div class="s4-box">
+                            <img class="ani p-japan4-1" src="japan/img/title-02.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                            <img class="ani p-japan4-2" src="japan/img/text-03.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
+                        </div>
+                    </section>
+                    <!--slide5-->
+                    <section class="swiper-slide slide5">
+                        <div class="s5-box">
+                            <img class="ani p-japan5-1" src="japan/img/title-03.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-japan5-2" src="japan/img/text-04.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                         <img class="ani p-japan5-3" src="japan/img/hl-pic.jpg" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                    </section>
+                    <!--slide6-->
+                    <section class="swiper-slide slide6">
+                        <div class="s6-box">
+                            <img class="ani p-japan6-1" src="japan/img/title-04.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-japan6-2" src="japan/img/text-05.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <!--slide7-->
+                    <section class="swiper-slide slide7">
+                        <div class="s7-box">
+                            <img class="ani p-japan7-1" src="japan/img/title-05.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-japan7-2" src="japan/img/text-06.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <!--slide8-->
+                    <section class="swiper-slide slide8">
+                        <div class="s8-box">
+                            <img class="ani p-japan8-1" src="japan/img/title-06.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-japan8-2" src="japan/img/text-07.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <!--slide9-->
+                    <section class="swiper-slide slide9">
+                        <div class="s-title">
+                            <span>参考行程</span>
+                            <em></em>
+                        </div>
+                        <div class="dpl-trip-detail">
+                            <div class="swiper-container intro-case-container">
+                                <div class="swiper-wrapper intro-case-wrapper">
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY1</span>
+                                                <img src="japan/img/trip-pic-01.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">国内</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">名古屋</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•    在机上好好休息，期待即将到来的精彩旅程</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY2</span>
+                                                <img src="japan/img/trip-pic-02.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">名古屋</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">福井</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•    前往日本幸福指数排名第一的福井县</p>
+                                                <p>•    欣赏国宝级大师的竹艺制作</p>
+                                                <p>•    乘车前往世界几大可以停车的海滩之一</p>
+                                                <p>•    采访曾在東尋坊救助过上百位游客性命的老人，倾听他关于生命的感悟</p>
+                                                <p>•    欣赏绝美的东寻访落日余晖</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY3</span>
+                                                <img src="japan/img/trip-pic-03.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">福井</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">金泽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•    前往有天空之城著称的【越前大野城】欣赏仙境一般的美景</p>
+                                                <p>•    前往金泽体验金箔制作，品尝金箔冰激凌</p>
+                                                <p>•    前往日本三大庭院之一的兼六园品味日本园林禅意</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY4</span>
+                                                <img src="japan/img/trip-pic-04.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">金泽</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">上高地</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">平汤温泉</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>在素有亚洲阿尔卑斯之称的上高地散步，尽情享受森林浴</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY5</span>
+                                                <img src="japan/img/trip-pic-05.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">平汤温泉</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">白川乡</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">高山</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•   前往童话之镇——白川乡，感受童话村落之美</p>
+                                                <p>•   品尝高级和牛【飞弹牛】日式晚宴</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY6</span>
+                                                <img src="japan/img/trip-pic-06.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">高山</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">下吕温泉</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•   身着和服漫步在“小京都”的高山街道</p>
+                                                <p>•   观摩作为日本全国唯一仅存国家遗迹的代官（官名）执政场所及官邸【高山阵屋】</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY7</span>
+                                                <img src="japan/img/trip-pic-07.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">下吕温泉</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">名古屋</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>•   前往获得日本艺术奖的白鸟庭园数寄屋建筑（茶室风格的建筑）的茶室——清羽亭品尝正宗的日本茶</p>
+                                                <p>•   参观日本最古老和地位最高的神宫之一的热田神宫，日本天皇和皇后还曾到此参拜</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY8</span>
+                                                <img src="japan/img/trip-pic-08.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">名古屋</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">国内</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>抵达国内，结束丰富多彩的日本中部之旅。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 分页器 -->
+                                <div class="swiper-pagination swiper-pagination-h"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide10-->
+                    <section class="swiper-slide slide10">
+                        <div class="s-title">
+                            <span>价格说明</span>
+                            <em></em>
+                        </div>
+                        <div class="s10-box">
+                            <div class="dpl-price-box">
+                                <div class="dpl-price-item">
+                                    <h4>参考报价</h4>
+                                    <div class="dpl-price-cont">
+                                        <p><span class="pr1"><i>4.3</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格包含</h4>
+                                    <div class="dpl-price-cont">
+                                        <img src="japan/img/price.png" >
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格不含</h4>
+                                    <div class="dpl-price-cont">
+                                        国际机票，签证费用，客户私人消费，其它未提及的费用
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dpl-footer">
+                                <p>以上产品最终解释权归6人游所有</p>
+                                <span class="dpl-footer-label"></span>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <span class="arrow-down"></span>
-            </div>
-            <div class="intro-bg-box">
-                <div class="swiper-container" id="intro-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide intro-bg" >
-                            <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="5s" src="intro/img/bg1.jpg">
-                        </div>
-                        <div class="swiper-slide intro-bg">
-                            <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="5s" src="intro/img/bg2.jpg">
-                        </div>
-                        <div class="swiper-slide intro-bg">
-                            <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="5s" src="intro/img/bg3.jpg">
-                        </div>
-                    </div>
+                <div class="arrow-box">
+                    <img src="japan/img/arrow.png" id="array">
                 </div>
-            </div>
-            
-        </div>
-        <!-- 定制案例 -->
-        <div class="intro-p2">
-            <div class="intro-counter">
-                <p class="p1" data-scroll-reveal="enter left over 0.5s"><span class="t1">72765+</span>个家庭</p>
-                <p class="p2" data-scroll-reveal="enter right over 0.5s">都选择了6人游定制旅行</p>
-            </div>
-            <div class="intro-case-box">
-                <div class="swiper-container intro-case-container" id="swiper-case">
-                    <div class="swiper-wrapper intro-case-wrapper">
-                        <div class="swiper-slide case-slide">
-                            <div class="slide-case">
-                                <div class="case-img">
-                                    <img src="intro/img/img1.jpg" alt="">
-                                </div>
-                                <div class="case-title">
-                                    唐先生南美洲5国34天探索之旅
-                                </div>
-                                <div class="case-desc">
-                                    <p>“南美洲5国给我留下了终身难忘的经历，34天竟然毫无审美疲劳，体会到了把时间和金钱浪费在美好的事物上的愉悦。这一切离不开六人游的精心安排，更感谢领队刘雅玲热情，细致，贴心的服务，让我们体会到定制游的魅力。”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide case-slide">
-                            <div class="slide-case">
-                                <div class="case-img">
-                                    <img src="intro/img/img2.jpg" alt="">
-                                </div>
-                                <div class="case-title">
-                                    丁女士曼谷清迈7日定制之旅
-                                </div>
-                                <div class="case-desc">
-                                    <p>“和妹妹两个人的这段旅行，有6人游的全程陪伴，贴心舒适满意，安排也都很棒，所以有了这次美丽旅行，心情好了，一切都好，照片技术也Up Up Up，下次旅行还是6人游！期待”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide case-slide">
-                            <div class="slide-case">
-                                <div class="case-img">
-                                    <img src="intro/img/img3.jpg" alt="">
-                                </div>
-                                <div class="case-title">
-                                    任先生 以色列约旦圣地寻访之旅
-                                </div>
-                                <div class="case-desc">
-                                    <p>“很谢谢你们的服务，尤其感谢张青，还有在以色列的那个导游大哥和翻译jialu，我们特别喜欢他俩啊，一个专业，一个尽责，真好必须要好好夸夸。还有在约旦的翻译杨华，也非常的感谢她，很耐心细心，感谢。”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide case-slide">
-                            <div class="slide-case">
-                                <div class="case-img">
-                                    <img src="intro/img/img4.jpg" alt="">
-                                </div>
-                                <div class="case-title">
-                                    贾女士【日本关西】6日度假之旅
-                                </div>
-                                <div class="case-desc">
-                                    <p>“整个行程都不错，行程前行程中都挺好的，感谢导游大伟一路细心周到热情的服务，感谢6人游的朋友们为我们所做的一切，下次有机会再见。”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide case-slide">
-                            <div class="slide-case">
-                                <div class="case-img">
-                                    <img src="intro/img/img5.jpg" alt="">
-                                </div>
-                                <div class="case-title">
-                                    巨筠【厄瓜多尔】深度探索之旅
-                                </div>
-                                <div class="case-desc">
-                                    <p>“一直很喜欢野生动物，看了BBC的纪录片（加拉帕戈斯群岛）后很向往那里。这次旅行体验非常好，服务非常周到！行程很清楚，时间基本能按自己的节奏，不像跟团那么紧凑和忙碌。定制旅行完全是按我们的意愿安排。”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 分页器 -->
-                    <div class="swiper-pagination"></div>
-                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-v"></div>
             </div>
         </div>
-        <!-- 服务内容 -->
-        <div class="intro-p3">
-            <div class="sc sc-tit" data-scroll-reveal="enter top over 0.5s"><img src="intro/img/service_01.png"></div>
-            <div class="sc sc-1" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/service_02.png"></div>
-            <div class="sc sc-2" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/service_03.png"></div>
-            <div class="sc sc-3" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/service_04.png"></div>
-        </div>
-        <!-- 定制流程 -->
-        <div class="intro-p4">
-            <div class="pc pc-tit" data-scroll-reveal="enter top over 0.5s"><img src="intro/img/process_01.png"></div>
-            <div class="pc pc-1" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/process_02.png"></div>
-            <div class="pc pc-2" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/process_03.png"></div>
-            <div class="pc pc-3" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/process_04.png"></div>
-            <div class="pc pc-4" data-scroll-reveal="enter bottom move 20px over 0.5s"><img src="intro/img/process_05.png"></div>
-        </div>
-        <!-- 旅行顾问 -->
-        <div class="intro-p5">
-            <div class="gw gw-tit" data-scroll-reveal="enter top over 0.5s after"><img src="intro/img/gw-tit.jpg"></div>
-            <div class="gw gw-1" data-scroll-reveal="enter left  over 0.5s after"><img src="intro/img/gw1.jpg"></div>
-            <div class="gw gw-2" data-scroll-reveal="enter right over 0.5s after"><img src="intro/img/gw2.jpg"></div>
-            <div class="gw gw-3" data-scroll-reveal="enter left  over 0.5s after"><img src="intro/img/gw3.jpg"></div>
-        </div>
-        <div class="intro-foot">
-            <img src="intro/img/foot.jpg">
-        </div>
-        <!-- 咨询下单按钮 -->
-        <div class="dpl-ft-bar dpl-ft-btn">
-            <a href="javascript:;" class="dpl-btn-submit lc-order">立即开启定制之旅</a>
+        <!-- 分享弹层 -->
+        <div id="common_share_layer" class="ft-actionsheet show" style="display: none;">
+            <div class="ft-actionsheet-cnt">
+                <h4>分享到</h4>
+                <button class="lc-friend">微信好友</button>
+                <button class="lc-group">微信朋友圈</button>
+                <button class="lc-cancel" style="margin-bottom: 20px;">取消</button>
+            </div>
         </div>
     </div>
-    
-    <script src="intro/js/swiper.min.js"></script>
-    <script src="intro/js/swiper.animate.min.js"></script>
+    <script src="common/js/swiper.min.js"></script>
+    <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
-        var swiper1 = new Swiper('#intro-container',{
-            effect : 'fade',
-            autoplay: 3000,
-        });
-        var swiper2 = new Swiper('#swiper-case', {
-            pagination: '.swiper-pagination',
+        var mySwiper = new Swiper ('.japan-container', {
+            pagination: '.swiper-pagination-v',
+            paginationClickable: true,
+            direction: 'vertical',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            watchSlidesProgress: true,
+            onSetTransition: function(swiper, speed) {
+                for (var i = 0; i < swiper.slides.length; i++){
+                    es = swiper.slides[i].style;
+                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+                }
+            },
+        })
+        var swiper = new Swiper('.intro-case-container', {
+            pagination: '.swiper-pagination-h',
+            paginationType: 'fraction',
             slidesPerView: 'auto',
             centeredSlides: true,
             paginationClickable: true,
-            spaceBetween: 20,
+            spaceBetween: 15
         });
     </script>
-    <script src="intro/js/scrollReveal.js"></script>
-    <script>
-        (function(){
-            window.scrollReveal = new scrollReveal({ reset: false, move: '50px'});
-        })();
-    </script>
 </body>
-</html>	
+</html> 
