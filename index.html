@@ -1,24 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>探秘绝色南美</title>
-<meta name="keywords" content="深度策划 南美">
-<meta name="description" content="探秘绝色南美 - 穿越千里无人区，用脚步丈量异域风情">
+<title>尘嚣之下的寻美归真之旅</title>
+<meta name="keywords" content="深度策划 日本">
+<meta name="description" content="尘嚣之下的寻美归真之旅-日本中部7晚8天美景之旅">
 <meta name="HandheldFriendly" content="true">
 <meta name="MobileOptimized" content="width">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
-<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css"> 
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="common/css/animate.min.css">  
 <style type="text/css">
     * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
     *:before, *:after { box-sizing: border-box; max-height: 100000px; }
-    body, html { width: 100%; }
+    body, html { width: 100%; height: 100%; }
     html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
     html {/* font-size: 100px; */ }
-    body{font-size: .28rem; line-height: 1.5; font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #3a383c;  margin:0 auto; }
+    body{font-size: .28rem; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #333;  margin:0 auto; }
     img{ border: 0;vertical-align: middle;}
     a { background-color: transparent; text-decoration: none; }
     a:active, a:hover { outline: 0; text-decoration: none;}
@@ -37,9 +38,9 @@
     .dpl-btn-submit{ display: block; height: 44px; line-height: 44px; background:#57D07F; color: #FFF;  text-align: center; font-size: 15px;}
     .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
     .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
-    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(south_america/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
-    .dpl-footer{ background:rgba(0,0,0,.7); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
-    .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(south_america/img/footer-label.png) no-repeat; background-size: contain; }
+    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(brazil/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
+    .dpl-footer{ text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: 0; padding-bottom: .7rem; }
+    .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(brazil/img/footer-label.png) no-repeat; background-size: contain; }
     /* actionsheet */
     .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
     .ft-actionsheet.show { pointer-events: inherit; opacity: 1; }
@@ -58,73 +59,130 @@
         .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
     }
     /* content */
-    .dpl-body{ width: 100%; background: url(south_america/img/bg.jpg) center bottom no-repeat; background-size: cover; background-attachment: fixed;}
-    .dpl-body:before {  content: ' ';  position: fixed;  z-index: -1;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: url(south_america/img/bg.jpg) center 0 no-repeat;  background-size: cover;}
-    .dpl-wrapper{ position: relative; }
-    .dpl-container{ width: 100%; }
-    .dpl-container img{ width:100%; height: auto; vertical-align: middle; }
-    .dpl-banner {}
-    .dpl-banner .dpl-logo{text-align: right; padding-right: .3rem; padding-top: .3rem;}
-    .dpl-banner .dpl-logo .logo{ display: inline-block; width: 1.2rem; height: 1.29rem; background: url(south_america/img/logo.png); background-size: cover; }
-    .dpl-banner .dpl-topic{text-align: center;}
-    .dpl-btm{ padding-top: 2rem; }
-    .dpl-title{text-align: center; padding:.6rem 0;}
-    .dpl-title img{ width: 100%; }
-    .dpl-concept{ position: relative; background-color: #fff; }
-    .dpl-concept .concept-box{ position: relative;}
-    .dpl-concept .concept-box .concept-text{ position: relative; z-index: 5; }
-    .dpl-concept .map{ position: relative; margin-top: -3.2rem; z-index: 1; }
-    .dpl-highlights{}
-    .dpl-highlights .dpl-title{background:rgba(0,0,0,.7); padding:.3rem 0; }
-    .dpl-hl-box{ background-color: #fff;  }
-    .dpl-hl-item{}
-    .dpl-hl-item .hl-title{ text-align: center; }
-    .dpl-hl-item .hl-title .hl-tit-1{ font-size: .4rem; position: relative; font-weight: bold;}
-    .dpl-hl-item .hl-title .hl-tit-1:before{content:''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-right: .2rem;}
-    .dpl-hl-item .hl-title .hl-tit-1:after{content: ''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-left: .2rem;}
-    .dpl-hl-item .hl-title .hl-tit-2{ font-size: .32rem;font-weight: bold; }
-    .dpl-hl-item .hl-img{}
-    .dpl-hl-item .hl-txt{ padding:.4rem; font-size: 14px; line-height: 28px; text-indent: 28px;  color: #666; word-break: break-all; }
-    .dpl-hl-item .hl-txt strong{ font-size: .32rem; color: #794c33; }
-    .dpl-hl-item .hl-slide-box{ padding-bottom:.4rem;}
-    .dpl-hl-item .hl-swiper{padding-left:.4rem;}
-    .dpl-hl-item .hl-swiper .swiper-slide{ width: 85%; }
-    .dpl-trip{ background-color:rgba(0,0,0,.7); }
-    .dpl-price-desc{ color: #794c33; position: relative; background-color: #fff; }
-    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
-    .dpl-price-box .dpl-price-item{ border:1px solid #333; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
-    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #0c2c45; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont{  text-align: center; font-size: .26rem; color: #0c2c45;}
-    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont.dpl-price-inner{padding:.15rem .2rem; }
-    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#0c2c45; }
-    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
-    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top: .1rem; font-size: .22rem; color: #0c2c45; line-height: .26rem; text-align: left; padding-left: .15rem; }
-    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #0c2c45; margin-top: .1rem; }
-    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
+    .dpl-body{ height: 100%; position: relative; }
+    .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
+    .arrow-box{position: absolute;bottom: -40px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
+    #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 24px; height: 20px; z-index: 999;}
+    @-webkit-keyframes start {
+    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+    60% {opacity: 1;-webkit-transform: translate(0,0);}
+    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+    }
+    @-moz-keyframes start {
+        0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+        60% {opacity: 1;-moz-transform: translate(0,0);}
+        100% {opacity: 0;-moz-transform: translate(0,-8px);}
+    }
+    @keyframes start {
+        0%,30% {opacity: 0;transform: translate(0,10px);}
+        60% {opacity: 1;transform: translate(0,0);}
+        100% {opacity: 0;transform: translate(0,-8px);}
+    }
+    .swiper-container {width: 100%; height: 100%;}
+    .swiper-slide {text-align: center;font-size: 18px;}
+    .brazil-container .slide1{ background: url(brazil/img/bg-banner.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide2{ background: url(brazil/img/bg-design.jpg) center top no-repeat;background-size: cover; }
+    .brazil-container .slide3{ background: url(brazil/img/bg-hl-1.jpg) center center no-repeat;background-size: cover; } 
+    .brazil-container .slide4{ background: url(brazil/img/bg-hl-2.jpg) center bottom no-repeat;background-size: cover; }
+    .brazil-container .slide5{ background: url(brazil/img/bg-hl-3.jpg) center bottom no-repeat;background-size: cover;}
+    .brazil-container .slide6{ background: url(brazil/img/bg-hl-4.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide7{ background: url(brazil/img/bg-hl-5.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide8{ background: url(brazil/img/bg-hl-6.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide9{ background: url(brazil/img/bg-hl-7.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide10{ background: url(brazil/img/bg-trip.jpg) center center no-repeat;background-size: cover; } 
+    .brazil-container .slide11{ background: url(brazil/img/bg-price.jpg) center center no-repeat;background-size: cover; }
+    .brazil-container .slide12{ background: url(brazil/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
+    .label-text{ display: inline-block; width: 2.1rem; height: 1.7rem; position: absolute; right: .4rem; top: .5rem; background: url(brazil/img/label-text.png) no-repeat; background-size: contain; }
+    .hl-label{ display: block; width: 3.14rem; height: 2.14rem;  }
+    .label-1{background: url(brazil/img/nav-1.png) no-repeat; background-size: cover;}
+    .label-2{background: url(brazil/img/nav-2.png) no-repeat; background-size: cover;}
+    .label-3{background: url(brazil/img/nav-3.png) no-repeat; background-size: cover;}
+    .label-4{background: url(brazil/img/nav-4.png) no-repeat; background-size: cover; width: 7.5rem; height: 2.14rem;}
+    .label-5{background: url(brazil/img/nav-5.png) no-repeat; background-size: cover;}
+    .label-6{background: url(brazil/img/nav-6.png) no-repeat; background-size: cover;}
+    .label-7{background: url(brazil/img/nav-7.png) no-repeat; background-size: cover;}
+    .label-8{background: url(brazil/img/nav-8.png) no-repeat; background-size: cover;}
+    .p-brazil1-1{ width: 6.24rem; height: 6.24rem; position: absolute; right:.57rem; bottom: 1.08rem; }
+    .s2-box{ padding-left: .88rem; padding-top: 1.7rem; text-align: left; }
+    .hl-text{ font-size: .26rem; line-height: .36rem; color: #fff; text-align: left; }
+    .s2-box img{ width: 4.2rem; height: 6.6rem; }
+    .s3-box{ position: absolute; left:0; bottom: 1.4rem; text-align: left;}
+    .s3-box .p-brazil3-1{ width: 3.5rem;  }
+    .s3-box .p-brazil3-2{padding: .35rem; padding-right: .4rem;}
+    .s4-box{ padding-top: .15rem; text-align: left;}
+    .s4-box .p-brazil4-1{ width: 4.5rem;  }
+    .s4-box .p-brazil4-2{padding: .35rem; }
+    .s5-box{ padding-top: .15rem; text-align: left;}
+    .s5-box .p-brazil5-2{padding: .35rem; }
+    .s5-container{padding-bottom: 50px;}
+    .s5-slide-box .slide-img img{ width: 100%; }
+    .s5-container .swiper-pagination-bullet{ background: rgba(255,255,255,.9); }
+    .s5-container .swiper-pagination-bullet-active{ background:#be5a2d; }
+    .s6-box{ padding-top: .15rem; text-align: left;}
+    .s6-box .p-brazil6-1{padding: .35rem; padding-top: 0; }
+    .s6-box1{ overflow: hidden; margin-top: .15rem; }
+    .s6-box1 .p-brazil6-2{ float: left; width: 6.04rem; height: 3.42rem; }
+    .s6-box2{ overflow: hidden;position: relative; top: -.5rem; z-index: 5; }
+    .s6-box2 .p-brazil6-3{ float: right; width: 6.58rem; height: 3.4rem;  }
+    .s7-box{ padding-top: .15rem; text-align: left;}
+    .s7-box .p-brazil7-1{ width: 100%; }
+    .s7-box .p-brazil7-2{padding: .35rem; padding-top: .2rem; }
+    .s7-box1{ overflow: hidden; margin-top: .15rem; }
+    .s7-box1 .p-brazil7-3{ float: left; width: 3.5rem; height: 3.5rem; }
+    .s7-box2{ width: 100%; height: 2.2rem; position: relative; z-index: 5; }
+    .s7-box2 .p-brazil7-4{ width: 5.2rem; height: 5.2rem; position: absolute; top:-2.75rem; right: -.9rem;  }
+    .s8-box{ padding-top: .15rem; text-align: left;}
+    .s8-box .p-brazil8-1{ width: 4.5rem; height: 1.2rem; }
+    .s8-box .p-brazil8-2{padding: .35rem; padding-right: 2.2rem; }
+    .s9-box{ padding-top: 2.15rem; text-align: left;}
+    .s9-box .p-brazil9-1{ width: 4.5rem; height: .6rem; }
+    .s9-box .p-brazil9-2{padding: .35rem; padding-right: 3rem; }
+    .s10-box{ margin-top: .8rem; position: relative; }
+    .s10-box img{ width: 100%; }
+    .s10-box .pin{ display: block; width: .5rem; height: .66rem; background: url(brazil/img/icon-pin.png) no-repeat; background-size: cover; position: absolute; z-index: 5; }
+    .s10-box .pin-1{ left:1.28rem; top:1.26rem; }
+    .s10-box .pin-2{ left:1.86rem; top:1.06rem; }
+    .s10-box .pin-3{ right:2.26rem; bottom:3.5rem; }
+    .s10-box .pin-4{ right:2.74rem; bottom:2.58rem; } 
+    .s10-box .pin-5{ left:2.46rem; bottom:2.06rem; }
+    .s10-box .pin-6{ right:1.85rem; bottom:3.2rem; }
+    .s10-box .pin-7{ right:1.96rem; bottom:2.68rem; }
+    .s10-box .day-1{ display: inline-block; width: 1rem; height: .6rem; position: absolute; left: .26rem; top: 1.73rem; background: url(brazil/img/day-1.png) no-repeat;background-size: cover;  }
+    .s10-box .day-2{display: inline-block; width: .9rem; height: .5rem; position: absolute; left: 2.36rem; top: 1.6rem; background: url(brazil/img/day-2.png) no-repeat;background-size: cover;}
+    .s10-box .day-3{display: inline-block; width: 1.4rem; height: .5rem; position: absolute; right: 1.8rem; top: 4.5rem; background: url(brazil/img/day-3.png) no-repeat;background-size: cover;}
+    .s10-box .day-4{display: inline-block; width: 1.6rem; height: .54rem; position: absolute; left: 2.5rem; bottom: 2.5rem; background: url(brazil/img/day-4.png) no-repeat;background-size: cover;}
+    .s10-box .day-5{display: inline-block; width: 1.02rem; height: .54rem; position: absolute; left: 1.45rem; bottom: 1.7rem; background: url(brazil/img/day-5.png) no-repeat;background-size: cover;}
+    .s10-box .day-6{display: inline-block; width: 1.2rem; height: .5rem; position: absolute; right: .59rem; bottom: 3.1rem; background: url(brazil/img/day-6.png) no-repeat;background-size: cover;}
+    .s10-box .day-7{display: inline-block; width: 1.52rem; height: .54rem; position: absolute; right: .99rem; bottom: 1.98rem; background: url(brazil/img/day-7.png) no-repeat;background-size: cover;}
+    .s12-box{padding-top: .8rem;padding-right: .3rem; padding-left: .3rem;}
+    .dpl-trip-detail{ background: url(brazil/img/line.png) center 1.6rem no-repeat; background-size:auto .5rem;  }
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px; padding-top: 40px;}
     .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
     .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
     .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
-    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
-    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #56a3e5; }
-    .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden; }
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: .36rem; font-weight: bold; color: #333; bottom:0; right:20px; bottom:auto;}
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ font-size: .52rem; color: #333; }
+    .case-slide{ width: 80%; overflow: hidden; }
     .case-slide.swiper-slide-active{opacity: 1;}
-    .slide-case{height: 7.8rem;}
-    .case-img{ position: relative; }
+    .slide-case{/* height: 7.6rem; */ color: #666;}
+    .case-img{ position: relative; padding-top: .3rem; }
     .case-img img{ width: 100%; height: auto; }
-    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #0c2c45; color: #fff; font-size: .24rem; text-align: center; }
-    .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
-    .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
-    .case-line{padding:.25rem 0; text-align: center;}
-    .case-line-box{ overflow: hidden; text-align: center; display: inline-block; }
-    .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
-    .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
-    .case-line-box .line-item:before{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; left: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
-    .case-line-box .line-item .line-dot{ display: block; }
-    .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
-    .case-line-box .line-item .line-name{ font-size: .2rem; }
-    .case-desc{  padding:0 .3rem .3rem .3rem; }
-    .case-desc p{ font-size: .24rem; }
+    .case-info{}
+    .case-day{ color: #333; font-size: .48rem; font-weight: bold; text-align: center; }
+    .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
+    .case-line{padding-top:.8rem ; text-align: center; font-size: .32rem; font-weight: 500; }
+    .case-line span{display: inline-block; margin:0 3px;}
+    .case-desc{  padding:.3rem; text-align: left; height: 2.4rem; }
+    .case-desc p{ font-size: .26rem; }
+    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
+    .dpl-price-box .dpl-price-item{ border:1px solid #333; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #333; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{ text-align: center; font-size: .24rem; color: #333; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#333; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; font-size: .2rem; color: #333; line-height: .24rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #333; margin-top: .1rem; }
 </style>
 <script type="text/javascript">
     (function() {
@@ -146,738 +204,434 @@
 <body class="dpl-body">
     <div class="dpl-wrapper">
         <!-- 底部固定浮动 -->
-        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2" style="">
+        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2">
             <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
             <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
         </div>
         <div class="dpl-container">
-            <!-- //头部Banner -->
-            <div class="dpl-banner">
-                <p class="dpl-logo"><span class="logo"></span></p>
-                <p class="dpl-topic"><img src="south_america/img/topic.png"></p>
-                <div class="dpl-btm">
-                    <img src="south_america/img/line.png">
+            <div class="swiper-container brazil-container">
+                <div class="swiper-wrapper">
+                    <!--slide1-->
+                    <section class="swiper-slide slide1">
+                        <img class="ani p-brazil1-1" src="brazil/img/text-banner.png" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                    </section>
+                    <!--slide2-->
+                    <section class="swiper-slide slide2">
+                        <span class="hl-label label-1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s2-box">
+                            <img class="ani p-brazil2-1" src="brazil/img/text-design.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <!--slide3-->
+                    <section class="swiper-slide slide3">
+                        <span class="hl-label label-2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s3-box">
+                            <img class="ani p-brazil3-1" src="brazil/img/title-1.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
+                            <div class="ani p-brazil3-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">亚马逊热带雨林，总会勾起人们对地球上这片神秘幽森之地的无尽遐想。这里的一切都那么原始奇妙，那么不可预知，让人着迷，令人敬畏。挑战你的味蕾，吃亲手钓的食人鱼，换上土族部落简陋服装，当一回真正的土族人。深入这片无人之境探奇，体验原生态动植物奥妙。</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide4-->
+                    <section class="swiper-slide slide4">
+                        <span class="hl-label label-3 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s4-box">
+                            <img class="ani p-brazil4-1" src="brazil/img/title-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5" swiper-animate-delay="0.2s" >
+                            <div class="ani p-brazil4-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">也许世界杯期间你在酒吧里感受到了足球气氛，这次我们带你亲临现场感受足球帝国球迷的狂热，还在排队检票时就可以看到对战俱乐部粉丝的助威表演，而这只是个开始，一旦进球更有球迷给你意想不到的惊喜，赛前我们会渗透到里约最大的足球俱乐部flamengo内部，运气好的话可以和队员合影，不管支持哪支球队，我们一起用葡萄牙语呐喊助威。</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide5-->
+                    <section class="swiper-slide slide5">
+                        <span class="hl-label label-4 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s5-box">
+                            <div class="ani p-brazil5-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">如果你是真正的球迷，一定不会忘记2002年日韩世界杯巴西夺冠的精彩表现，如果你想一睹冠军的风采，我们可以为你邀请到世界杯冠军德尼尔森／贝贝托／里瓦尔多／罗伯托-卡洛斯一同参观足球俱乐部，观战足球比赛，并一同享用晚餐。</p>
+                            </div>
+                        </div>
+                        <div class="s5-slide-box">
+                            <div class="swiper-container s5-container">
+                                <div class="swiper-wrapper s5-wrapper">
+                                    <div class="swiper-slide s5-slide">
+                                        <div class="slide-img">
+                                            <img src="brazil/img/hl-pic-1.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide s5-slide">
+                                        <div class="slide-img">
+                                            <img src="brazil/img/hl-pic-2.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide s5-slide">
+                                        <div class="slide-img">
+                                            <img src="brazil/img/hl-pic-3.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide s5-slide">
+                                        <div class="slide-img">
+                                            <img src="brazil/img/hl-pic-4.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 分页器 -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide6-->
+                    <section class="swiper-slide slide6">
+                        <span class="hl-label label-5 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s6-box">
+                            <div class="ani p-brazil6-1" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">世界上最大规模的狂欢聚集地桑巴大道，每天都吸引着全球的游客前来膜拜，虽然不是狂欢时节，但这里仍有着狂欢节的味道，在这里你可以穿着狂欢时节的服装和道具，并可以带走道具作为留念。</p>
+                            </div>
+                        </div>
+                        <div class="s6-box1"><img class="ani p-brazil6-2" src="brazil/img/hl-pic-5.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0.2s"></div>
+                        <div class="s6-box2"><img class="ani p-brazil6-3" src="brazil/img/hl-pic-6.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.3s"></div>
+                    </section>
+                    <!--slide7-->
+                    <section class="swiper-slide slide7">
+                        <span class="hl-label label-6 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s7-box">
+                            <img class="ani p-brazil7-1" src="brazil/img/title-3.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5" swiper-animate-delay="0.2s" >
+                            <div class="ani p-brazil7-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">桑巴是热情，奔放的代名词，来到里约怎能不桑巴，这里有着白人、印第安人和黑人三种基因的混血姑娘，健康的肤色、性感的身材、艳丽的脸庞，她们的美是一种洋溢着活力和健康的美。在桑巴舞校里学习简单桑巴舞步，在Rio Senarium酒吧释放激情，Rio Senarium 酒吧曾被英国卫报评为全球十佳酒吧之一，《花儿与少年》里井柏然一行明星曾在这里学习桑巴。</p>
+                            </div>
+                        </div>
+                        <div class="s7-box1"><img class="ani p-brazil7-3" src="brazil/img/hl-pic-7.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0.2s"></div>
+                        <div class="s7-box2"><img class="ani p-brazil7-4" src="brazil/img/hl-pic-8.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.3s"></div>
+                    </section>
+                    <!--slide8-->
+                    <section class="swiper-slide slide8">
+                        <span class="hl-label label-7 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s8-box">
+                            <img class="ani p-brazil8-1" src="brazil/img/title-4.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5" swiper-animate-delay="0.2s" >
+                            <div class="ani p-brazil8-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">这里有保存最完整的忧伤而朴实的巴洛克风格小镇，众多风格各异的教堂，如画的广场，那感觉就像回到了18世纪。每当黄昏，漫步在崎岖的鹅卵石小路上，这里的一切又在太阳的余光下变成了另一种味道，不同的欧鲁普雷图会给人不同的感觉，但是每一种都是那么的令人沉醉。</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide9-->
+                    <section class="swiper-slide slide9">
+                        <span class="hl-label label-8 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"></span>
+                        <div class="s9-box">
+                            <img class="ani p-brazil9-1" src="brazil/img/title-5.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5" swiper-animate-delay="0.2s" >
+                            <div class="ani p-brazil9-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.2s" >
+                                <p class="hl-text">农场里的巴西烤肉和城市里的巴西烤肉不同，在这里你不再仅仅是个食客，你会亲自参与到肉的筛选、腌制、食材的准备、调料的配比、劈柴、烧炭、架烤炉等等流程。还要学习掌握火候、如何切肉、如何把握每一种牛肉不同的烤制方式，和口味。</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide10-->
+                    <section class="swiper-slide slide10">
+                        <span class="label-text ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.2" swiper-animate-delay="2.4s"></span>
+                        <div class="s10-box">
+                            <img class="ani" src="brazil/img/map.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2" swiper-animate-delay="0.1s">
+                            <i class="pin pin-1 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="0.8s"></i>
+                            <span class="day-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="0.8s"></span>
+                            <i class="pin pin-2 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="1s"></i>
+                            <span class="day-2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="1s"></span>
+                            <i class="pin pin-3 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="1.4s"></i>
+                            <span class="day-3 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="1.4s"></span>
+                            <i class="pin pin-4 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="0.8s"></i>
+                            <span class="day-4 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="0.8s"></span>
+                            <i class="pin pin-5 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="1.8s"></i>
+                            <span class="day-5 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="1.8s"></span>
+                            <i class="pin pin-6 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="1.6s"></i>
+                            <span class="day-6 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="1.6s"></span>
+                            <i class="pin pin-7 ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="0" swiper-animate-delay="1.2s"></i>
+                            <span class="day-7 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8" swiper-animate-delay="1.2s"></span>
+                        </div>
+                    </section>
+                    <!--slide11-->
+                    <section class="swiper-slide slide11">
+                        <div class="dpl-trip-detail">
+                            <div class="swiper-container intro-case-container">
+                                <div class="swiper-wrapper intro-case-wrapper">
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY1</span>
+                                                <div class="case-line">
+                                                    <span>国内</span>-<span>圣保罗</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-01.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY2</span>
+                                                <div class="case-line">
+                                                    <span>圣保罗</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-02.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY3</span>
+                                                <div class="case-line">
+                                                    <span>圣保罗</span>-<span>马瑙斯</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-03.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY4</span>
+                                                <div class="case-line">
+                                                    <span>亚马逊丛林</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-04.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY5</span>
+                                                <div class="case-line">
+                                                    <span>亚马逊丛林</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-05.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY6</span>
+                                                <div class="case-line">
+                                                    <span>马瑙斯</span>-<span>里约</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-06.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY7</span>
+                                                <div class="case-line">
+                                                    <span>里约</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-07.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY8</span>
+                                                <div class="case-line">
+                                                    <span>里约</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-08.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY9</span>
+                                                <div class="case-line">
+                                                    <span>里约</span>-<span>贝洛奥里藏特</span>-<span>黑金城</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-09.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY10</span>
+                                                <div class="case-line">
+                                                    <span>黑金城</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-10.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY11</span>
+                                                <div class="case-line">
+                                                    <span>黑金城</span>-<span>贝洛奥里藏特</span>-<span>里约</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-11.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY12</span>
+                                                <div class="case-line">
+                                                    <span>里约</span>-<span>伊瓜苏</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-12.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY13</span>
+                                                <div class="case-line">
+                                                    <span>伊瓜苏</span>-<span>圣保罗</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-13.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY14</span>
+                                                <div class="case-line">
+                                                    <span>圣保罗</span>-<span>国内</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-14.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-info">
+                                                <span class="case-day">DAY15</span>
+                                                <div class="case-line">
+                                                    <span>国内</span>
+                                                </div>
+                                            </div>
+                                            <div class="case-img">
+                                                <img src="brazil/img/trip-pic-15.jpg" alt="">
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>参观马瑙斯，下午进入亚马逊，参访亚马逊丛林中的土族部落，体验土族部落生活。（印第安人博物馆，马瑙斯百年大剧院，黑河文化宫，土族部落表演）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 分页器 -->
+                                <div class="swiper-pagination swiper-pagination-h"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide12-->
+                    <section class="swiper-slide slide12">
+                        
+                        <div class="s12-box">
+                            <div class="s-title">
+                            <span>价格说明</span>
+                            <em></em>
+                        </div>
+                            <div class="dpl-price-box">
+                                <div class="dpl-price-item">
+                                    <h4>参考报价</h4>
+                                    <div class="dpl-price-cont">
+                                        <p><span class="pr1"><i>2.7</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格包含</h4>
+                                    <div class="dpl-price-cont">
+                                        <img src="brazil/img/price.png" >
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格不含</h4>
+                                    <div class="dpl-price-cont">
+                                        国际机票、签证费用、客户私人消费，其它未提及的费用
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dpl-footer">
+                                <p>以上产品最终解释权归6人游所有</p>
+                                <span class="dpl-footer-label"></span>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-            <!-- //设计理念 -->
-            <div class="dpl-concept">
-                <div class="concept-box">
-                    <div class="concept-text">
-                        <img src="south_america/img/concept.png">
-                    </div>
-                    <div class="map">
-                        <img src="south_america/img/map-01.jpg">
-                        <img src="south_america/img/map-02.jpg">
-                    </div>
+                <div class="arrow-box">
+                    <img src="brazil/img/arrow.png" id="array">
                 </div>
-            </div>
-            <!-- //行程亮点 -->
-            <div class="dpl-highlights">
-                <div class="dpl-title">
-                    <img src="south_america/img/nav-01.png">
-                </div>
-                <div class="dpl-hl-box">
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-1-1.jpg">
-                        </div>
-                        <div class="hl-txt">隐藏在秘鲁深山密林中的奇迹马丘比丘，号称是失落的天空之城。整个城市都是印加人民为了他们的信仰太阳神而建。登上马丘比丘，我们特别为您安排了专业的考古专家，当您的私人向导，带您参观并讲解这座遗迹曾有过的辉煌。傍晚，您将搭乘Belmond Hiram Bingham奢华火车，透过全景复古的车窗欣赏乌鲁班巴河谷的美景，并品尝顶级美食与红酒。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-1-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-1-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-1-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-1-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-1-6.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-2-1.jpg">
-                        </div>
-                        <div class="hl-txt">去往近年声名鹊起的乌尤尼盐湖，您可以在盐湖上观落日余晖，体验难以言表的壮观与美丽；夜晚，还可以来观星，在缀满数不清的星星的蓝紫色夜空下喝红酒，夜游盐湖，架起您的相机留下难忘的浩瀚星空，然后入住纯盐做的奇特酒店，酒店内不但四周的墙壁，就连屋顶、床铺、桌椅和各种雕像都是盐做的哦。清晨，根据情况可以再去欣赏盐湖日出。午餐就安排在干的盐湖区，吃一顿户外野餐，在诺大的盐湖上，在工作人员现场搭建的帐篷下，享受当地美食，制造一生一次的难忘经历。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-2-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-2-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-2-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-2-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-2-6.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-3-1.jpg">
-                        </div>
-                        <div class="hl-txt">有人形容阿塔卡玛沙漠美得“一塌糊涂”，在这里，你不需要有任何设备就能感受奇迹：覆盖着皑皑白雪的火山，晶莹剔透的各式咸水湖和温泉湖，鲜红艳丽的岩石峡谷，炽热的天然间歇泉，这里一应俱全。夜晚，这里又化身全球最佳观星地，星空就像无穷无尽的万花筒一样，绵延不绝地在你的面前延展开来，美得让人窒息。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-3-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-3-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-3-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-3-5.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-4-1.jpg">
-                        </div>
-                        <div class="hl-txt">乘船前往世界上海拔最高的淡水湖的的喀喀湖，碧波荡漾，浅处还能看到小鱼游来游去，我们将带您登上乌罗斯和塔奎利岛，当地人会穿华丽的民族服饰迎接大家。千百年来，岛上的居民就生活在芦苇编制的小岛上，在整个的的喀喀湖上，像这样芦苇编制的大大小小的岛屿还有上百个。我们将亲自看到浮岛编制的过程，体会当地居民古老的生活方式。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-4-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-4-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-4-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-4-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-4-6.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-5-1.jpg">
-                        </div>
-                        <div class="hl-txt">太阳岛是的的喀喀湖上最大的岛屿，因岛上的太阳神庙得名。从科巴卡瓦纳码头上船前往太阳岛，岛上有超过八十个古迹遗址，大部份都建于十五世纪的印加时期。欣赏印加古迹，搭乘当地人用香蒲草捆扎做成的“淘淘拉”船或快艇出海，戏水看云，回望太阳岛似一位久居乡村质朴简单的少女，大美毫无半点的雕琢，就那样赤裸裸地绽放着，毫不扭捏，也不掩藏自己的不谙世事。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-5-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-5-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-5-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-5-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-5-6.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-6-1.jpg">
-                        </div>
-                        <div class="hl-txt">玻利维亚的“死亡之路”，被称为世界上最危险的公路，沿途有十字架的地方，都代表曾有车辆从那落下深谷。你可以来此观光，如果技术够好，也可以骑行，除了一小段上坡路，骑手能够以连续64公里不间断的方式下坡。山势陡峭，路况不明，脚边就是万丈深渊，想想是不是很刺激？</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-6-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-6-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-6-4.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-7-1.jpg">
-                        </div>
-                        <div class="hl-txt">经历过天空之境的震撼，能够再次颠覆你感官的也就红湖和绿湖了。我们安排了驱车驰骋在世界上最高最干燥的西罗里沙漠上，追寻南游多彩的安第斯湖泊——红湖，红色的湖面因藻类和矿物质而成，在这里还可以看到无比多的，长相优雅的粉红色火烈鸟及小羊驼等。至于绿湖，在远处的Licancabur火山的衬托下，晶莹剔透得如同地球上净度最高的绿宝石，让人舍不得移开眼睛。这一路上，经过的每一步，都是您摄影取景的绝佳地。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-7-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-7-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-7-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-7-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-7-6.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-8-1.jpg">
-                        </div>
-                        <div class="hl-txt">纳斯卡地画是一片绵延数公里的线条构成的各种生动的图案，镶刻在秘鲁大地之上。乘坐小型飞机在空中观赏这些地画，映入眼帘的是历经数千年、错落在沙漠地上、风吹不散的神秘几何动物图案，令人赞叹不已，至今无人知晓，是谁创造了它们并且为什么而创造，因此被列入世界十大迷团。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-8-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-8-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-8-4.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="south_america/img/hl-9-1.jpg">
-                        </div>
-                        <div class="hl-txt">被评为世界文化遗产的豪华且历史悠久的Orient-Express旗下酒店，前身是有着四百多年历史的教堂，有无与伦比的服务和无可挑剔的房间，每个房间都能看见城市迷人的风景。酒店周围有各种遗址、神庙、教堂和府邸让这里成为了难忘的旅行地，您可以沿着鹅卵石铺成的小路领略它富足和美丽的过去。</div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-9-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-9-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-9-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="south_america/img/hl-9-5.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- //参考行程 -->
-            <div class="dpl-trip">
-                <div class="dpl-title">
-                    <img src="south_america/img/nav-02.png">
-                </div>
-                <div class="dpl-trip-detail">
-                    <div class="swiper-container intro-case-container">
-                        <div class="swiper-wrapper intro-case-wrapper">
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY1</span>
-                                        <span class="case-city"><i></i>利马广场</span>
-                                        <img src="south_america/img/trip-pic-01.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">北京</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">达拉斯</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">利马</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>乘美国航班飞往秘鲁首都利马，途经达拉斯转机。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY2</span>
-                                        <span class="case-city"><i></i>利马大教堂</span>
-                                        <img src="south_america/img/trip-pic-02.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">利马</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 抵达秘鲁，游览当地人为之骄傲的公共空间，包括利马大广场，总统府，大教堂，圣马丁广场，国家博物馆。</p>
-                                        <p>• 逛爱情公园，漫步海滨大道。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY3</span>
-                                        <span class="case-city"><i></i>纳斯卡地画</span>
-                                        <img src="south_america/img/trip-pic-03.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">利马</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">纳斯卡地画</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">皮斯科</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 乘坐小型飞机在空中观赏世界神奇之迷纳斯卡大地画。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY4</span>
-                                        <span class="case-city"><i></i>海狮岛码头</span>
-                                        <img src="south_america/img/trip-pic-04.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">皮斯科</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">利马</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往有名的自然保护区PARACAS海狮岛码头，乘快艇游览鸟岛，这里是世界上最有名的鸟类聚集地，有无与伦比的动物种类和数量而著称。还可观赏到古老的世纪烛台奇观，它和复活岛上的石像，金字塔建造都属于世界未解之迷。</p>
-                                        <p>• 逛印加市场，感受当地风土人情。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY5</span>
-                                        <span class="case-city"><i></i>乌鲁班巴</span>
-                                        <img src="south_america/img/trip-pic-05.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">利马</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">库斯科</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">乌鲁班巴</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 飞往古老的印加古城库斯科，这里曾经是神秘印加古代文明的中心，参观令人叹为观止的古迹。</p>
-                                        <p>• 晚上前往乌鲁班巴酒店休息。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY6</span>
-                                        <span class="case-city"><i></i>Belmond Hiram Bingham号</span>
-                                        <img src="south_america/img/trip-pic-06.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">乌鲁班巴</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">马丘比丘</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 上午参观印加盐田。</p>
-                                        <p>• 下午搭乘全世界最奢华的火车Belmond Hiram Bingham号，享用列车的奢华服务与餐点。</p>
-                                        <p>• 沿着乌鲁班巴河，一路前往马丘比丘山脚下。</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY7</span>
-                                        <span class="case-city"><i></i>马丘比丘</span>
-                                        <img src="south_america/img/trip-pic-07.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">马丘比丘</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">库斯科</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 马丘比丘，是保存完好的前哥伦布时期的印加遗迹，是南美洲最重要的考古发掘中心，也是世界新七大奇迹之一。</p>
-                                        <p>• 前往马丘比丘景点门口，爬最高峰拍日出，自由探索印加文化古城。与羊驼合影，也可以在山顶上看阳光洒满山谷……</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY8</span>
-                                        <span class="case-city"><i></i>库斯科</span>
-                                        <img src="south_america/img/trip-pic-08.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">库斯科</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">普诺</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 早餐后参观库斯科，下午根据航班时间前往普诺。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY9</span>
-                                        <span class="case-city"><i></i>浮岛</span>
-                                        <img src="south_america/img/trip-pic-09.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">普诺</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">的的喀喀湖</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">科巴卡瓦纳</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往世界上海拔最高的淡水湖的的喀喀湖游览。</p>
-                                        <p>• 登上乌罗斯和塔奎利岛，看到浮岛编制的过程，体会当地居民古老的生活方式。</p>
-                                        <p>• 去小镇科巴卡瓦纳，入住科巴卡瓦纳酒店，体验一脚在秘鲁，一脚在玻利维亚的穿越感。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY10</span>
-                                        <span class="case-city"><i></i>太阳岛</span>
-                                        <img src="south_america/img/trip-pic-10.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">科巴卡瓦纳</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">太阳岛</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">拉巴斯</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往的的喀喀湖最大的岛屿太阳岛参观公元前的古城遗迹。</p>
-                                        <p>• 乘车沿着一段风景非常美的公路，前往玻利维亚首都拉巴斯。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY11</span>
-                                        <span class="case-city"><i></i>拉巴斯</span>
-                                        <img src="south_america/img/trip-pic-11.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">拉巴斯</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 去拉巴斯以北的“死亡之路”体验骑行，感受连续64公里一路下滑的乐趣。</p>
-                                        <p>• 游览拉巴斯市区，参观埃尔阿尔托大广场，逛女巫市场，记得一定要品尝仙人掌果。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY12</span>
-                                        <span class="case-city"><i></i>火车墓地</span>
-                                        <img src="south_america/img/trip-pic-12.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">拉巴斯</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">乌尤尼</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 飞往乌尤尼地区。</p>
-                                        <p>• 前往火车墓地，这是一个非常独特的地方，也许你只有在这里能看到各种老旧样式的火车陈列，斑驳的锈迹似乎在和你诉说着那段悲催的历史。</p>
-                                        <p>• 前往世界上最大的乌尤尼盐沼，即传说中的“天空之镜”，号称世界上最罕见的十大美景之一，是最接近天堂的地方。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY13</span>
-                                        <span class="case-city"><i></i>天空之境</span>
-                                        <img src="south_america/img/trip-pic-13.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">乌尤尼</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>在乌尤尼盐湖停留一整天，漫步在盐沼的天地，浸没在纯白的世界里，感受到了世外桃源般的纯净与美丽。举起相机，随手按下的快门，都是绝美的大片。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY14</span>
-                                        <span class="case-city"><i></i>红湖</span>
-                                        <img src="south_america/img/trip-pic-14.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">乌尤尼</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">红湖</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 乘坐四驱车穿越“天空之境”前往红湖。</p>
-                                        <p>• 参观红湖。如果天空之境已经让你震撼不已，那么红湖会再次颠覆你的感官。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY15</span>
-                                        <span class="case-city"><i></i>绿湖</span>
-                                        <img src="south_america/img/trip-pic-15.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">红湖</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">绿湖</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>在太阳升起前，去感受间歇泉和天然温泉。</p>
-                                        <p>参观如绿宝石般晶莹剔透的绿湖，你一定会惊奇大自然的鬼斧神工。 </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY16</span>
-                                        <span class="case-city"><i></i>阿塔卡玛</span>
-                                        <img src="south_america/img/trip-pic-16.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">绿湖</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">阿塔卡玛</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>前往智利，抵达世界极干之地阿塔卡马，进入月亮谷，一路恍若置身于科幻电影场景。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY17</span>
-                                        <span class="case-city"><i></i>阿塔卡玛</span>
-                                        <img src="south_america/img/trip-pic-17.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">阿塔卡玛</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往参观红鹤保护区内的Chaxas盐湖，途经Toconao小鎮和Jerez谷。</p>
-                                        <p>• 前往风景秀丽的Miscanti及Miñiques高原湖泊。</p>
-                                        <p>• 去高地小镇Socaire溜达，参观当地农作物并了解原著民的居住方式，买纪念品。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY18</span>
-                                        <span class="case-city"><i></i>当地村落</span>
-                                        <img src="south_america/img/trip-pic-18.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">阿塔卡玛</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">卡拉马</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">圣地亚哥</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往卡拉马小镇，这里的每一个小店都有独特的风格，记得品尝当地粮食做的手工冰激凌。</p>
-                                        <p>• 下午，飞往圣地亚哥。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY19</span>
-                                        <span class="case-city"><i></i>圣地亚哥</span>
-                                        <img src="south_america/img/trip-pic-19.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">圣地亚哥</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">达拉斯</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往总统府，观看禁卫军换岗。沿着阿玛斯广场参观西班牙风格的殖民地建筑。</p>
-                                        <p>• 乘车登上智利宗教的象征圣母山，俯瞰圣地亚哥，全城景色尽收眼底。</p>
-                                        <p>• 乘机飞往达拉斯。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY20</span>
-                                        <span class="case-city"><i></i>达拉斯</span>
-                                        <img src="south_america/img/trip-pic-20.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">达拉斯</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">北京</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>达拉斯转机回国，结束愉快的南美之旅</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 分页器 -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- //价格说明 -->
-            <div class="dpl-price-desc">
-                <div class="dpl-title">
-                    <img src="south_america/img/nav-03.png" alt="">
-                </div>
-                <div class="dpl-price-box">
-                    <div class="dpl-price-item">
-                        <h4>参考报价</h4>
-                        <div class="dpl-price-cont">
-                            <p><span class="pr1"><i>9.6</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
-                        </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格包含</h4>
-                        <div class="dpl-price-cont dpl-price-inner">
-                            <img src="south_america/img/price.png" >
-                        </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格不含</h4>
-                        <div class="dpl-price-cont">
-                            国内往返南美的机票、护照、游览中另行付费的项目、用餐、私人消费及费用包含中未提及的一切费用
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dpl-footer">
-                <p>以上产品最终解释权归6人游所有</p>
-                <span class="dpl-footer-label"></span>
             </div>
         </div>
         <!-- 分享弹层 -->
@@ -891,19 +645,45 @@
         </div>
     </div>
     <script src="common/js/swiper.min.js"></script>
+    <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
+        var mySwiper = new Swiper ('.brazil-container', {
+            direction: 'vertical',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            watchSlidesProgress: true,
+            onSetTransition: function(swiper, speed) {
+                for (var i = 0; i < swiper.slides.length; i++){
+                    es = swiper.slides[i].style;
+                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+                }
+            },
+        })
         var swiper = new Swiper('.intro-case-container', {
-            pagination: '.swiper-pagination',
+            pagination: '.swiper-pagination-h',
             paginationType: 'fraction',
             slidesPerView: 'auto',
             centeredSlides: true,
             paginationClickable: true,
             spaceBetween: 15
         });
-        var hlSwiper = new Swiper('.hl-swiper', {
+        var swiper = new Swiper('.s5-container', {
+            pagination: '.swiper-pagination',
             slidesPerView: 'auto',
-            spaceBetween: 10
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 15
         });
     </script>
+    <script src="/statics/app/scheme/js/common_detail.js?v=20170814" type="text/javascript"></script>
 </body>
 </html> 
