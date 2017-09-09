@@ -1,25 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>佛光温暖的国度</title>
-<meta name="keywords" content="深度策划 不丹">
-<meta name="description" content="佛光温暖的国度-佛光温暖着此方秘境，幸福循环于这片净土。">
+<title>品文艺生活之美</title>
+<meta name="keywords" content="深度策划 台湾">
+<meta name="description" content="品文艺生活之美 - 慢游台湾，深度体会精致风情与创意">
 <meta name="HandheldFriendly" content="true">
 <meta name="MobileOptimized" content="width">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
-<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="common/css/animate.min.css">  
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css"> 
 <style type="text/css">
     * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
     *:before, *:after { box-sizing: border-box; max-height: 100000px; }
-    body, html { width: 100%; height: 100%; }
+    body, html { width: 100%; }
     html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
     html {/* font-size: 100px; */ }
-    body{font-size: .28rem; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #fff;  margin:0 auto; }
+    body{font-size: .28rem; line-height: 1.5; font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #3a383c;  margin:0 auto; }
     img{ border: 0;vertical-align: middle;}
     a { background-color: transparent; text-decoration: none; }
     a:active, a:hover { outline: 0; text-decoration: none;}
@@ -38,8 +37,8 @@
     .dpl-btn-submit{ display: block; height: 44px; line-height: 44px; background:#57D07F; color: #FFF;  text-align: center; font-size: 15px;}
     .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
     .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
-    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(common/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
-    .dpl-footer{ text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: 0; padding-bottom: .7rem; }
+    .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(taiwan/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
+    .dpl-footer{ background:rgba(0,0,0,.7); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
     .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(common/img/footer-label.png) no-repeat; background-size: contain; }
     /* actionsheet */
     .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
@@ -59,71 +58,73 @@
         .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
     }
     /* content */
-    .dpl-body{ height: 100%; position: relative; }
-    .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
-    .arrow-box{position: absolute;bottom: -30px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
-    #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 24px; height: 20px; z-index: 999;}
-    @-webkit-keyframes start {
-    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
-    60% {opacity: 1;-webkit-transform: translate(0,0);}
-    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
-    }
-    @-moz-keyframes start {
-        0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
-        60% {opacity: 1;-moz-transform: translate(0,0);}
-        100% {opacity: 0;-moz-transform: translate(0,-8px);}
-    }
-    @keyframes start {
-        0%,30% {opacity: 0;transform: translate(0,10px);}
-        60% {opacity: 1;transform: translate(0,0);}
-        100% {opacity: 0;transform: translate(0,-8px);}
-    }
-    .swiper-container {width: 100%; height: 100%;}
-    .swiper-slide img{width:100%;}
-    .bhutan-container .slide1{ background: url(bhutan/img/bg-banner.jpg) center center no-repeat;background-size: cover; }
-    .bhutan-container .slide2{ background: url(bhutan/img/bg-design.jpg) center top no-repeat;background-size: cover; }
-    .bhutan-container .slide3{ background: url(bhutan/img/bg-hl-01.jpg) center center no-repeat;background-size: cover; } 
-    .bhutan-container .slide4{ background: url(bhutan/img/bg-hl-02.jpg) center bottom no-repeat;background-size: cover; }
-    .bhutan-container .slide5{ background: url(bhutan/img/bg-hl-03.jpg) center bottom no-repeat;background-size: cover;}
-    .bhutan-container .slide6{ background: url(bhutan/img/bg-hl-04.jpg) center center no-repeat;background-size: cover; }
-    .bhutan-container .slide7{ background: url(bhutan/img/bg-hl-05.jpg) center center no-repeat;background-size: cover; }
-    .bhutan-container .slide8{ background: url(bhutan/img/bg-hl-06.jpg) center center no-repeat;background-size: cover; }
-    .bhutan-container .slide9{ background: url(bhutan/img/bg-hl-07.jpg) center center no-repeat;background-size: cover; } 
-    .bhutan-container .slide10{ background: url(bhutan/img/bg-trip.jpg) center center no-repeat;background-size: cover; } 
-    .bhutan-container .slide11{ background: url(bhutan/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
-    .s1-box .p-bhutan1-1{ width: 5.1rem; height: 2.8rem; margin-top: .8rem; margin-left: .5rem; position: relative; z-index: 5; }
-    .s2-box .p-bhutan2-1{ width: 100%; margin-top:.9rem;  }
-    .s2-box .p-bhutan2-2{ width: 100%;}
-    .s3-box{padding-top:.9rem;}
-    .s4-box{ padding-top:.9rem; }
-    .s4-box .p-bhutan4-1{ float: left; width: .8rem; height: 4.4rem; margin-left: 1.06rem; }
-    .s4-box .p-bhutan4-2{ float: right; width: 3.5rem; height: 5.6rem; margin-right: .6rem;}
-    .s5-box{ padding-top:.9rem;}
-    .s6-box{ width: 100%; position: absolute; right:0; bottom: 50px;}
-    .s7-box{ width: 100%; position: absolute; right:0; bottom: 50px; }
-    .s8-box{ padding-top: .9rem; overflow: hidden; }
-    .s8-box2{overflow: hidden; padding-left: .6rem; padding-top: .8rem;}
-    .s8-box2 .p-bhutan8-3{ width: 2.94rem; height: 3.45rem; position: relative; z-index: 2;}
-    .s8-box2 .p-bhutan8-4{ width: 2.2rem; height: 2.54rem; position: relative; z-index: 5; margin-left: -.6rem;}
-    .s9-box{padding-top:.9rem;}
+    .dpl-body{ width: 100%; background: url(taiwan/img/bg.jpg) center bottom no-repeat; background-size: cover; background-attachment: fixed;}
+    .dpl-body:before { content: '';  position: fixed;  z-index: -1;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: url(taiwan/img/bg.jpg) center 0 no-repeat;  background-size: cover;}
+    .dpl-wrapper{ position: relative; }
+    .dpl-container{ width: 100%; }
+    .dpl-container img{ width:100%; height: auto; vertical-align: middle; }
+    .dpl-banner {}
+    .dpl-banner .dpl-logo{text-align: right; padding-right: .3rem; padding-top: .3rem;}
+    .dpl-banner .dpl-logo .logo{ display: inline-block; width: 1.2rem; height: 1.29rem; background: url(taiwan/img/logo.png); background-size: cover; }
+    .dpl-banner .dpl-topic{text-align: right; padding-right:.9rem; padding-top:1rem;}
+    .dpl-banner .dpl-topic img{ width: 2.3rem; height: auto;}
+    .dpl-btm{ padding-top: 2rem; }
+    .dpl-title{text-align: center; padding:.6rem 0;}
+    .dpl-title img{ width: 100%; }
     .s-title{ text-align: center; padding-top: .5rem; }
     .s-title span{ display: block; font-size: .48rem; color: #fff; line-height: .5rem; }
     .s-title em{display: inline-block; height: 4px; border-top: 1px solid #fff; width: 1.5rem;}
-    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px; padding-top: 40px;}
+    .dpl-trip-title{padding:.3rem 0;}
+    .dpl-price-title{padding:.3rem 0;}
+    .dpl-price-title .s-title{color: #1d467c;}
+    .dpl-price-title .s-title span{color: #1d467c;}
+    .dpl-price-title em{border-top-color:#1d467c}
+    .dpl-concept{ position: relative; background-color: #fff; }
+    .dpl-concept .concept-box{ position: relative;}
+    .dpl-concept .concept-box .concept-text{ position: relative; z-index: 5; }
+    .dpl-concept .map{ position: relative; margin-top: -3.2rem; z-index: 1; }
+    .dpl-highlights{}
+    .dpl-highlights .dpl-title{background:rgba(0,0,0,.7); padding:.3rem 0; }
+    .dpl-hl-box{ background-color: #fff;  }
+    .dpl-hl-item{}
+    .dpl-hl-item .hl-title{ text-align: center; }
+    .dpl-hl-item .hl-title .hl-tit-1{ font-size: .4rem; position: relative; font-weight: bold;}
+    .dpl-hl-item .hl-title .hl-tit-1:before{content:''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-right: .2rem;}
+    .dpl-hl-item .hl-title .hl-tit-1:after{content: ''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-left: .2rem;}
+    .dpl-hl-item .hl-title .hl-tit-2{ font-size: .32rem;font-weight: bold; }
+    .dpl-hl-item .hl-img{}
+    .dpl-hl-item .hl-txt{ padding:.4rem; font-size: 14px; line-height: 24px; text-indent: 28px;  color: #666; word-break: break-all; }
+    .dpl-hl-item .hl-txt p{ margin-bottom: 15px;}
+    .dpl-hl-item .hl-slide-box{ padding-bottom:.4rem;}
+    .dpl-hl-item .hl-swiper{padding-left:.4rem;}
+    .dpl-hl-item .hl-swiper .swiper-slide{ width: 85%; }
+    .dpl-trip{ background-color:rgba(0,0,0,.7); }
+    .dpl-price-desc{ color: #1d467c; position: relative; background-color: #fff; }
+    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
+    .dpl-price-box .dpl-price-item{ border:1px solid #1d467c; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #1d467c; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{  text-align: center; font-size: .26rem; color: #1d467c;}
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont.dpl-price-inner{padding:.15rem .2rem; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#1d467c; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top: .1rem; font-size: .22rem; color: #1d467c; line-height: .26rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #0c2c45; margin-top: .1rem; }
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
     .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
     .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
     .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
-    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; right:20px; }
-    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #ff9d14; }
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #56a3e5; }
     .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden; }
     .case-slide.swiper-slide-active{opacity: 1;}
-    .slide-case{/* height: 7.6rem; */ color: #666;}
+    .slide-case{height: 8.6rem;}
     .case-img{ position: relative; }
     .case-img img{ width: 100%; height: auto; }
-    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #ff9d14; color: #fff; font-size: .24rem; text-align: center; }
+    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #0c2c45; color: #fff; font-size: .24rem; text-align: center; }
     .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
     .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
-    .case-line{padding:.25rem 0; text-align: center;}
+    .case-line{padding:.25rem 0 .15rem 0; text-align: center;}
     .case-line-box{ overflow: hidden; text-align: center; display: inline-block; }
     .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
     .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
@@ -131,17 +132,8 @@
     .case-line-box .line-item .line-dot{ display: block; }
     .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
     .case-line-box .line-item .line-name{ font-size: .2rem; }
-    .case-desc{  padding:0 .3rem .3rem .3rem; text-align: left; height: 2.4rem; }
+    .case-desc{  padding:0 .3rem .3rem .3rem; }
     .case-desc p{ font-size: .24rem; }
-    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
-    .dpl-price-box .dpl-price-item{ border:1px solid #fff; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
-    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #333; font-size: .3rem; background: #fff; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont{ text-align: center; font-size: .24rem; color: #fff; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
-    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#fff; }
-    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
-    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top:2px; font-size: .2rem; color: #fff; line-height: .26rem; text-align: left; padding-left: .15rem; }
-    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #fff; margin-top: .1rem; }
 </style>
 <script type="text/javascript">
     (function() {
@@ -161,342 +153,371 @@
 <script src="/statics/js/jquery.min.js"></script>
 </head>
 <body class="dpl-body">
-	<!-- 测试后删除 Start -->
-	<style type="text/css">
-	    .preBanner { position: fixed; left: 0; top: 0; z-index: 9999999;width: 80px; height: 80px;}
-	</style>
-	<img class="preBanner" src="common/img/banner.png">
-	<!-- 测试后删除 End -->
     <div class="dpl-wrapper">
         <!-- 底部固定浮动 -->
-        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2">
+        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2" style="">
             <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
             <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
         </div>
         <div class="dpl-container">
-            <div class="swiper-container bhutan-container">
-                <div class="swiper-wrapper">
-                    <!--slide1-->
-                    <section class="swiper-slide slide1">
-                    	<div class="s1-box">
-                    		<img class="ani p-bhutan1-1" src="bhutan/img/banner-title.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                    	</div>
-                    </section>
-                    <!--slide2-->
-                    <section class="swiper-slide slide2">
-                    	<div class="s2-box">
-                    		<img class="ani p-bhutan2-1" src="bhutan/img/concept-text-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" />
-                        	<img class="ani p-bhutan2-2" src="bhutan/img/concept-text-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" />
-                    	</div>
-                    </section>
-                    <!--slide3-->
-                    <section class="swiper-slide slide3">
-                        <div class="s3-box">
-                            <img class="ani p-bhutan3-1" src="bhutan/img/title-01.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                            <img class="ani p-bhutan3-2" src="bhutan/img/text-01.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
-                        </div>
-                    </section>
-                    <!--slide4-->
-                    <section class="swiper-slide slide4">
-                        <div class="s4-box">
-                            <img class="ani p-bhutan4-1" src="bhutan/img/title-02.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                            <img class="ani p-bhutan4-2" src="bhutan/img/text-02.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
-                        </div>
-                    </section>
-                    <!--slide5-->
-                    <section class="swiper-slide slide5">
-                        <div class="s5-box">
-                            <img class="ani p-bhutan5-1" src="bhutan/img/title-03.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
-                            <img class="ani p-bhutan5-2" src="bhutan/img/text-03.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                        </div>
-                    </section>
-                    <!--slide6-->
-                    <section class="swiper-slide slide6">
-                        <div class="s6-box">
-                            <img class="ani p-bhutan6-1" src="bhutan/img/title-04.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
-                            <img class="ani p-bhutan6-2" src="bhutan/img/text-04.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                        </div>
-                    </section>
-                    <!--slide7-->
-                    <section class="swiper-slide slide7">
-                        <div class="s7-box">
-                            <img class="ani p-bhutan7-1" src="bhutan/img/title-05.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
-                            <img class="ani p-bhutan7-2" src="bhutan/img/text-05.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                        </div>
-                    </section>
-                    <!--slide8-->
-                    <section class="swiper-slide slide8">
-                        <div class="s8-box">
-                            <img class="ani p-bhutan8-1" src="bhutan/img/title-06.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
-                            <img class="ani p-bhutan8-2" src="bhutan/img/text-06.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                        </div>
-                        <div class="s8-box2">
-                        	<img class="ani p-bhutan8-3" src="bhutan/img/p-8-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.2" swiper-animate-delay="0.5s" >
-                            <img class="ani p-bhutan8-4" src="bhutan/img/p-8-2.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.6s" >
-                        </div>
-                    </section>
-                    <!--slide9-->
-                    <section class="swiper-slide slide9">
-                        <div class="s9-box">
-                            <img class="ani p-bhutan9-1" src="bhutan/img/title-07.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
-                            <img class="ani p-bhutan9-2" src="bhutan/img/text-07.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
-                        </div>
-                    </section>
-                    <!--slide10-->
-                    <section class="swiper-slide slide10">
-                        <div class="s-title">
-                            <span>参考行程</span>
-                            <em></em>
-                        </div>
-                        <div class="dpl-trip-detail">
-                            <div class="swiper-container intro-case-container">
-                                <div class="swiper-wrapper intro-case-wrapper">
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY1</span>
-                                                <img src="bhutan/img/trip-pic-01.jpg" alt="">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">国内</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">曼谷</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>由于中国与不丹未建交，所以要从第三国前往不丹，鉴于泰国签证好办，曼谷机票性价比高，所以推荐经曼谷飞往帕罗。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY2</span>
-                                                <img src="bhutan/img/trip-pic-02.jpg" alt="">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">曼谷</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">帕罗</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">廷布</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>• 塔宗，古时用作帕罗瞭望塔，现已改成国家博物馆。</p>
-                                                <p>• 帕罗宗，建于1644年，现在是政府办公场所。</p>
-                                                <p>• 逛一下首都廷布的街道，充满不丹趣味的手工艺品，让人过目不忘。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY3</span>
-                                                <img src="bhutan/img/trip-pic-03.jpg" alt="">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">廷布</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>• 穿着不丹传统服装拜访第四任国王的尚师，跟随尚师学习佛法，打坐，冥想。</p>
-                                                <p>• 其他参观内容：国家纪念碑，不丹最大的佛像，不丹的国兽-塔金，射箭比赛，制作自己头像的邮票。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY4</span>
-                                                <img src="bhutan/img/trip-pic-04.jpg">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">廷布</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>• 登古寺是不丹全国最高等级的佛教学习中心， 跟随登古寺老师在山上打坐、冥想。</p>
-                                                <p>• 扎西却宗是国王办公的地方，是廷布最大的建筑，下午5点后我们可以进入内部参观。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY5</span>
-                                                <img src="bhutan/img/trip-pic-05.jpg">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">廷布</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">普纳卡</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>天气好的时候在多雄拉山口可以看到雄伟壮观的喜马拉雅，在Druk wangyel寺庙跟随尚师打坐、冥想。途中经过切米拉康寺院，是不丹最出名的求子圣地，有日本，新加坡的客人来此求子。穿着传统服装造访当地人家，寻找幸福根源。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY6</span>
-                                                <img src="bhutan/img/trip-pic-06.jpg" alt="">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">普纳卡</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">帕罗</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>• 普纳卡宗被誉为不丹最美的建筑，是王室冬季的住所，是现任国王结婚所在地，也被称为“幸福王宫”。</p>
-                                                <p>• 趟在半山腰的uma酒店，喝一杯咖啡，欣赏山谷的美景，享受惬意的下午茶时光。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY7</span>
-                                                <img src="bhutan/img/trip-pic-07.jpg">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">帕罗</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>虎穴寺院气势庞伟，这个令人难以置信的寺庙建在17世纪，在900米深的岩石悬崖上沿河谷依山建成，被誉为世界十大超级寺院之一。由于虎穴寺建在悬崖峭壁上，须徒步往返于停车场，午餐在中途的餐厅就餐休息。徒步速度根据自身体力，一般情况单程需两个小时左右时间。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY8</span>
-                                                <img src="bhutan/img/trip-pic-08.jpg" alt="">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">帕罗</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">曼谷</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>• 祈楚寺是不丹最古老的寺院，始建于638年，庙内供奉的释迦摩尼八岁等身像是不丹最神圣的佛像之一。也是不丹皇室举行庆典的重要场所。</p>
-                                                <p>• 下午乘机离开不丹，由于帕罗飞曼谷在曼谷时间的晚上，所以建议在曼谷住一晚。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide case-slide">
-                                        <div class="slide-case">
-                                            <div class="case-img">
-                                                <span class="case-day">DAY9</span>
-                                                <img src="bhutan/img/trip-pic-09.jpg">
-                                            </div>
-                                            <div class="case-line">
-                                                <div class="case-line-box">
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">曼谷</span>
-                                                    </div>
-                                                    <div class="line-item">
-                                                        <span class="line-dot"><i class="dot"></i></span>
-                                                        <span class="line-name">国内</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="case-desc">
-                                                <p>从曼谷乘机返回国内。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 分页器 -->
-                                <div class="swiper-pagination swiper-pagination-h"></div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--slide11-->
-                    <section class="swiper-slide slide11">
-                        <div class="s-title">
-                            <span>价格说明</span>
-                            <em></em>
-                        </div>
-                        <div class="s10-box">
-                            <div class="dpl-price-box">
-                                <div class="dpl-price-item">
-                                    <h4>参考报价</h4>
-                                    <div class="dpl-price-cont">
-                                        <p><span class="pr1"><i>1.9</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
-                                    </div>
-                                </div>
-                                <div class="dpl-price-item">
-                                    <h4>价格包含</h4>
-                                    <div class="dpl-price-cont">
-                                    	<img src="bhutan/img/price.png"/>
-                                    </div>
-                                </div>
-                                <div class="dpl-price-item">
-                                    <h4>价格不含</h4>
-                                    <div class="dpl-price-cont">全程机票、中转国家签证和住宿、私人消费、不丹境外的所有费用</div>
-                                </div>
-                            </div>
-                            <div class="dpl-footer">
-                                <p>以上产品最终解释权归6人游所有</p>
-                                <span class="dpl-footer-label"></span>
-                            </div>
-                        </div>
-                    </section>
+            <!-- //头部Banner -->
+            <div class="dpl-banner">
+                <p class="dpl-logo"><span class="logo"></span></p>
+                <p class="dpl-topic"><img src="taiwan/img/topic.png"></p>
+                <div class="dpl-btm">
+                    <img src="taiwan/img/line.png">
                 </div>
-                <div class="arrow-box">
-                    <img src="common/img/arrow.png" id="array">
+            </div>
+            <!-- //设计理念 -->
+            <div class="dpl-concept">
+                <div class="concept-box">
+                    <div class="concept-text">
+                        <img src="taiwan/img/concept.png">
+                    </div>
                 </div>
+            </div>
+            <!-- //行程亮点 -->
+            <div class="dpl-highlights">
+                <div class="dpl-title">
+                    <div class="s-title">
+                        <span>行程亮点</span>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="dpl-hl-box">
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-1-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>诚品创立于1989年，因为带着原创的理念，融合了咖啡馆，文教店，特色伴手礼店跟手信店，它的意义早已超越了书店的概念，成为台湾文化的代表元素之一，号称是一座阅读与生活的博物馆。许多人来台湾，会把此处列为必经之地。</p>
+                        	<p>走进诚品大楼，除了书局，展现在你面前的是一个包含了文化、生活、风尚、书店、设计、视界、流行和美食的世界。这里的书，品种很齐全，24小时营业，每一个人都能找到适合自己的读物。据说，晚上11点之后，常常会在这里偶遇明星名人悠闲而坐，从容优雅地款待身心。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-2-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>台北故宫博物馆的风格庄重典雅，雕刻无比精美，馆藏共约60万件，其中书画、织绣等易损展品每3个月更换1次，想看完全部展品要25年。相较而言，北京故宫算是遗址，台北故宫博物院藏的是精华。</p>
+                        	<p>这样一座宝库，近年因屡次推出兼具文创话题和经济效益的馆藏衍生品而轰动华语圈。比如先后出的康熙手书复制品“朕知道了”纸胶带，热销到缺货；“朕又来了”系列，包括夜光运动手环、密奏文件夹等超多产品，小6就很想要一把翡翠白菜伞；“朕就是这样汉子”,成网络金句，傲娇又霸气，天知道故宫接下来还会用什么好玩的创意刷新大家的视界？</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-3-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>因老板是一位建筑师，归隐之后，在台北汐止山建了这座极具东方禅韵的园林餐厅，作为设计餐厅的代表作，早已闻名于世。就像有食客形容的：山林的绿意融进开阔的茶室，开放式的榻榻米与山林几乎毫无隔断，坐在榻榻米上吃饭，仿佛就置身于山林之中。</p>
+                        	<p>这里的菜式吸取了日本怀石料理的理念，选用当季的新鲜食材制作而成。来此吃一次饭，就像进行一场愉悦五官的禅修，让人在感受隐士山林的私房美味的同时，还时不时能发现惊艳味蕾的惊喜。每道菜端上来之时，衬着桌上的紫色宣纸，仿佛艺术品一般。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-4-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>在台湾，想要吃到最划算、最地道的日本料理，首选上引水产。一踏入它的地界，现代化鱼市感扑面而来，干净、卫生，各式海鲜，因陈列有术，卖相绝佳。什么青花鱼、秋刀鱼、帝王蟹、毛蟹、南非玫瑰龙虾，南非鲍鱼、象鼻蚌、黑鲍鱼、法国吉拉多生蚝及各种虾，螃蟹，价格合理。哪怕以往在别处很难买到的海鲜，在此要多少有多少，不怕你买，就怕你荷包不够鼓。</p>
+                        	<p>如果时间够，也可以直接在此加工现吃，蒸的，煮的，炸的，碳烤的，盐焗的，烧的，烘的，站着，坐着，想要怎么吃都行。或者随便进一家日料店，点个最便宜的套餐，就能把鲷鱼、旗鱼、鲑鱼、鲔鱼、花鲷、甜虾、鲑鱼子等都拿下，样样好吃到让人想哭。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-5-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>云门舞集由享誉世界的编舞家林怀民创办，是一个台湾现代舞蹈表演团体，以独特的创意和精湛舞技见长，获得世界各地观众与舞评家的热烈赞赏。情感不磨灭，对美的追求就不会停止，一起去深入云门的内心世界，看看深喑美感的大家林怀民的作品，一起去解冻在都市里炼就的理智之心，感受心底最真实情绪的流动。</p>
+                        	<p>云门舞者不是在演绎故事，而是通过呈献肢体动作，让你自己去想象真正的故事。每个人都可以借着演员的动作与舞美，将自己的故事代入舞中。虔诚的观众会在观舞时，代入个人感情，有的甚至感动到潸然泪下，都是再正常不过的事。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-5.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dpl-hl-item">
+                        <div class="hl-img">
+                            <img src="taiwan/img/hl-6-1.jpg">
+                        </div>
+                        <div class="hl-txt">
+                        	<p>纸箱王是台湾最早以纸为主题的观光创意园区。创办人对各种纸的特性极其了解，在天马行空的创造巧思下，创造出一个让人叹为观止又涵养人心的异想世界。园内展示、贩售的纸品，囊括了大家生活所需的方方面面，包括坚固耐重的纸箱桌椅，写实富有创意造型纸灯饰、到可以烹煮纸火锅餐碗等。</p>
+                        	<p>另外，还有高耸林立在园区中的世界地标，及逼真写实的纸箱动物展示区。透过纸的特性与独特的结构设计技法，呈现全台唯一的纸箱动物园，让人人都看得懂，这是一座无门槛的纸艺创作殿堂哦。逛累了，还能在纸做的餐厅里，体验一场奇特的用餐之旅。</p>
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-6.jpg" alt=""></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //参考行程 -->
+            <div class="dpl-trip">
+                <div class="dpl-title dpl-trip-title">
+                    <div class="s-title">
+                        <span>参考行程</span>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="dpl-trip-detail">
+                    <div class="swiper-container intro-case-container">
+                        <div class="swiper-wrapper intro-case-wrapper">
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY1</span>
+                                        <img src="taiwan/img/trip-pic-01.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">中国大陆</span>
+                                            </div>
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 搭乘航班飞往台北，展开精彩旅程。</p>
+                                        <p>• 下午，去台北最美的街道永康和青田，体会光阴的故事，品尝各式美食，那里的黄昏很美哦。</p>
+                                        <p>• 晚上，宁夏夜市边逛边吃。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide day2">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY2</span>
+                                        <img src="taiwan/img/trip-pic-02.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 参观台湾规模最大的博物馆——台北故宫博物院。</p>
+                                        <p>• 逛松山文创园，体验亲手制作手工艺品的快感。</p>
+                                        <p>• 去上引水产，尽情挑选海鲜，放开享用美食。</p>
+                                        <p>• 去国父纪念馆参观，如果赶上正点时间，还可以观看仪队交接仪式哦。</p>
+                                        <p>• 参观台北 101大楼，在35层的星巴克点一杯咖啡，坐下来体会慢生活，俯瞰台北夜景。</p>
+                                        <p>• 逛台北文化地标——诚品书店信义旗舰店。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY3</span>
+                                        <img src="taiwan/img/trip-pic-03.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 早上，逛阳明山国家公园，里头的阳明书屋原为蒋中正的行馆。</p>
+                                        <p>• 午间，去食养山房吃午饭，体验茶道。</p>
+                                        <p>• 下午，驱车前往著名的山城九份，逛累了还可以去阿妹茶楼歇歇腿，喝个下午茶。</p>
+                                        <p>• 我们特地安排了平溪十分车站放天灯，重现经典电影《那些年我们一起追过的女孩》最浪漫的一刻。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY4</span>
+                                        <img src="taiwan/img/trip-pic-04.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">南投</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 驱车前往南投纸箱王，动手制作属于自己的 DIY 作品，于主题餐厅品味难忘的午餐体验。</p>
+                                        <p>• 去著名的清境农场，这里因清新空气，境地优雅似仙居闻名于世，是台湾最佳的高山旅游胜地。</p>
+                                        <p>• 逛清境小瑞士花园。</p>
+                                        <p>• 夜间，在民宿，喝茶，数星星。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY5</span>
+                                        <img src="taiwan/img/trip-pic-05.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">南投</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 逛集集镇，在古老的建筑和街景中，感受当年繁华的商贸痕迹，回味其百年历史的文化积淀。</p>
+                                        <p>• 乘坐轮船环游日月潭，还可以乘缆车鸟瞰日月潭湖景。</p>
+                                        <p>• 去九族文化村参观，这是唯一获米其林 2星推荐的主题乐园。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY6</span>
+                                        <img src="taiwan/img/trip-pic-06.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">南投</span>
+                                            </div>
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 去云门舞集看演出，享受全身的感官被世界顶级的独特创意和精湛的舞技包裹的感觉。</p>
+                                        <p>• 去西门町、信义商圈买买买。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case-slide">
+                                <div class="slide-case">
+                                    <div class="case-img">
+                                        <span class="case-day">DAY7</span>
+                                        <img src="taiwan/img/trip-pic-07.jpg" alt="">
+                                    </div>
+                                    <div class="case-line">
+                                        <div class="case-line-box">
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">台北</span>
+                                            </div>
+                                            <div class="line-item">
+                                                <span class="line-dot"><i class="dot"></i></span>
+                                                <span class="line-name">中国大陆</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-desc">
+                                        <p>• 搭乘航班返回大陆，结束一周愉快的文艺台湾之旅。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //价格说明 -->
+            <div class="dpl-price-desc">
+                <div class="dpl-title dpl-price-title">
+                    <div class="s-title">
+                        <span>价格说明</span>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="dpl-price-box">
+                    <div class="dpl-price-item">
+                        <h4>参考报价</h4>
+                        <div class="dpl-price-cont">
+                            <p><span class="pr1"><i>2</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                        </div>
+                    </div>
+                    <div class="dpl-price-item">
+                        <h4>价格包含</h4>
+                        <div class="dpl-price-cont dpl-price-inner">
+                            <img src="taiwan/img/price.png" >
+                        </div>
+                    </div>
+                    <div class="dpl-price-item">
+                        <h4>价格不含</h4>
+                        <div class="dpl-price-cont">私人消费及费用包含中未提及的一切费用</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dpl-footer">
+                <p>以上产品最终解释权归6人游所有</p>
+                <span class="dpl-footer-label"></span>
             </div>
         </div>
         <!-- 分享弹层 -->
@@ -510,38 +531,19 @@
         </div>
     </div>
     <script src="common/js/swiper.min.js"></script>
-    <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
-        var mySwiper = new Swiper ('.bhutan-container', {
-            direction: 'vertical',
-            mousewheelControl : true,
-            onInit: function(swiper){
-                swiperAnimateCache(swiper);
-                swiperAnimate(swiper);
-            },
-            onSlideChangeEnd: function(swiper){
-                swiperAnimate(swiper);
-            },
-            onTransitionEnd: function(swiper){
-                swiperAnimate(swiper);
-            },
-            watchSlidesProgress: true,
-            onSetTransition: function(swiper, speed) {
-                for (var i = 0; i < swiper.slides.length; i++){
-                    es = swiper.slides[i].style;
-                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
-                }
-            },
-        })
         var swiper = new Swiper('.intro-case-container', {
-            pagination: '.swiper-pagination-h',
+            pagination: '.swiper-pagination',
             paginationType: 'fraction',
             slidesPerView: 'auto',
             centeredSlides: true,
             paginationClickable: true,
             spaceBetween: 15
         });
+        var hlSwiper = new Swiper('.hl-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 10
+        });
     </script>
-    <script src="/statics/app/scheme/js/common_detail.js?v=20170901" type="text/javascript"></script>
 </body>
 </html> 
