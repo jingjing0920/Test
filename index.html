@@ -1,24 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>品文艺生活之美</title>
-<meta name="keywords" content="深度策划 台湾">
-<meta name="description" content="品文艺生活之美 - 慢游台湾，深度体会精致风情与创意">
+<title>食尚东京</title>
+<meta name="keywords" content="深度策划 日本">
+<meta name="description" content="食尚东京-视觉味觉的轻奢之旅">
 <meta name="HandheldFriendly" content="true">
 <meta name="MobileOptimized" content="width">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
-<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css"> 
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="common/css/animate.min.css">  
 <style type="text/css">
     * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
     *:before, *:after { box-sizing: border-box; max-height: 100000px; }
-    body, html { width: 100%; }
+    body, html { width: 100%; height: 100%; }
     html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
     html {/* font-size: 100px; */ }
-    body{font-size: .28rem; line-height: 1.5; font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #3a383c;  margin:0 auto; }
+    body{font-size: .28rem; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #26252b; color: #fff;  margin:0 auto; }
     img{ border: 0;vertical-align: middle;}
     a { background-color: transparent; text-decoration: none; }
     a:active, a:hover { outline: 0; text-decoration: none;}
@@ -38,7 +39,7 @@
     .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
     .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
     .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(common/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
-    .dpl-footer{ background:rgba(0,0,0,.7); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
+    .dpl-footer{ text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: 0; padding-bottom: .7rem; }
     .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(common/img/footer-label.png) no-repeat; background-size: contain; }
     /* actionsheet */
     .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
@@ -58,73 +59,72 @@
         .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
     }
     /* content */
-    .dpl-body{ width: 100%; background: url(taiwan/img/bg.jpg) center bottom no-repeat; background-size: cover; background-attachment: fixed;}
-    .dpl-body:before { content: '';  position: fixed;  z-index: -1;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: url(taiwan/img/bg.jpg) center 0 no-repeat;  background-size: cover;}
-    .dpl-wrapper{ position: relative; }
-    .dpl-container{ width: 100%; }
-    .dpl-container img{ width:100%; height: auto; vertical-align: middle; }
-    .dpl-banner {}
-    .dpl-banner .dpl-logo{text-align: right; padding-right: .3rem; padding-top: .3rem;}
-    .dpl-banner .dpl-logo .logo{ display: inline-block; width: 1.2rem; height: 1.29rem; background: url(taiwan/img/logo.png); background-size: cover; }
-    .dpl-banner .dpl-topic{text-align: right; padding-right:.9rem; padding-top:1rem;}
-    .dpl-banner .dpl-topic img{ width: 2.3rem; height: auto;}
-    .dpl-btm{ padding-top: 2rem; }
-    .dpl-title{text-align: center; padding:.6rem 0;}
-    .dpl-title img{ width: 100%; }
+    .dpl-body{ height: 100%; position: relative; }
+    .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
+    .arrow-box{position: absolute;bottom: -10px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
+    #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 30px; height: 30px; z-index: 999;}
+    @-webkit-keyframes start {
+	    0%,30% {opacity: 0;-webkit-transform: translate(10px,0);}
+	    60% {opacity: 1;-webkit-transform: translate(0,0);}
+	    100% {opacity: 0;-webkit-transform: translate(-8px,0);}
+    }
+    @keyframes start {
+        0%,30% {opacity: 0;transform: translate(10px,0);}
+	    60% {opacity: 1;transform: translate(0,0);}
+	    100% {opacity: 0;transform: translate(-8px,0);}
+    }
+    .swiper-container {width: 100%; height: 100%;}
+    .swiper-slide img{width:100%;}
+    .tokyo-container .slide1{ background: url(tokyo/img/bg-banner.jpg) center center no-repeat;background-size: cover; }
+    .tokyo-container .slide2{ background: url(tokyo/img/bg-design.jpg) center top no-repeat;background-size: cover; }
+    .tokyo-container .slide3{ background: url(tokyo/img/bg-hl-01.jpg) center center no-repeat;background-size: cover; } 
+    .tokyo-container .slide4{ background: url(tokyo/img/bg-hl-02.jpg) center bottom no-repeat;background-size: cover; }
+    .tokyo-container .slide5{ background: url(tokyo/img/bg-hl-03.jpg) center bottom no-repeat;background-size: cover;}
+    .tokyo-container .slide6{ background: url(tokyo/img/bg-hl-04.jpg) center center no-repeat;background-size: cover; }
+    .tokyo-container .slide7{ background: url(tokyo/img/bg-hl-05.jpg) center center no-repeat;background-size: cover; }
+    .tokyo-container .slide8{ background: url(tokyo/img/bg-hl-06.jpg) center center no-repeat;background-size: cover; }
+    .tokyo-container .slide9{ background: url(tokyo/img/bg-hl-07.jpg) center center no-repeat;background-size: cover; } 
+    .tokyo-container .slide10{ background: #26252b; } 
+    .tokyo-container .slide11{ background: url(tokyo/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
+    .s1-box{text-align: center;}
+    .s1-box .p-tokyo1-1{ width: 4.8rem; height: 6.6rem; }
+    .s2-box{ position: absolute; bottom:2.5rem;}
+    .s2-box .p-tokyo2-1{ width: 100%;   }
+    .s3-box{padding-top:.9rem;}
+    .s3-box .p-tokyo3-2{padding:.5rem 0;}
+    .s4-box{ padding-top:.9rem; }
+    .s4-box .p-tokyo4-2{ margin-top: .6rem;}
+    .s5-box{ padding-top:.9rem;}
+    .s6-box{ padding-top:.9rem;}
+    .s7-box{ padding-top:.9rem; }
+    .s7-box .p-tokyo7-2{ margin-top: .6rem;}
+    .s8-box{ padding-top: .9rem; overflow: hidden; }
+	.s8-box .p-tokyo8-1{ float: right; width: 2.2rem; height: 4.8rem; }
+	.s8-box .p-tokyo8-2{ float: left; width: 2.6rem; height: 3.7rem; }
     .s-title{ text-align: center; padding-top: .5rem; }
     .s-title span{ display: block; font-size: .48rem; color: #fff; line-height: .5rem; }
     .s-title em{display: inline-block; height: 4px; border-top: 1px solid #fff; width: 1.5rem;}
-    .dpl-trip-title{padding:.3rem 0;}
-    .dpl-price-title{padding:.3rem 0;}
-    .dpl-price-title .s-title{color: #1d467c;}
-    .dpl-price-title .s-title span{color: #1d467c;}
-    .dpl-price-title em{border-top-color:#1d467c}
-    .dpl-concept{ position: relative; background-color: #fff; }
-    .dpl-concept .concept-box{ position: relative;}
-    .dpl-concept .concept-box .concept-text{ position: relative; z-index: 5; padding:.3rem 0 .5rem 0; }
-    .dpl-concept .map{ position: relative; margin-top: -3.2rem; z-index: 1; }
-    .dpl-highlights{}
-    .dpl-highlights .dpl-title{background:rgba(0,0,0,.7); padding:.3rem 0; }
-    .dpl-hl-box{ background-color: #fff;  }
-    .dpl-hl-item{}
-    .dpl-hl-item .hl-title{ text-align: center; }
-    .dpl-hl-item .hl-title .hl-tit-1{ font-size: .4rem; position: relative; font-weight: bold;}
-    .dpl-hl-item .hl-title .hl-tit-1:before{content:''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-right: .2rem;}
-    .dpl-hl-item .hl-title .hl-tit-1:after{content: ''; display: inline-block; width: .4rem; height: 10px; border-top: 2px solid #3a383c; margin-left: .2rem;}
-    .dpl-hl-item .hl-title .hl-tit-2{ font-size: .32rem;font-weight: bold; }
-    .dpl-hl-item .hl-img{}
-    .dpl-hl-item .hl-txt{ padding:.4rem; font-size: 14px; line-height: 24px; text-indent: 28px;  color: #666; word-break: break-all; }
-    .dpl-hl-item .hl-txt p{ margin-bottom: 15px;}
-    .dpl-hl-item .hl-slide-box{ padding-bottom:.4rem;}
-    .dpl-hl-item .hl-swiper{padding-left:.4rem;}
-    .dpl-hl-item .hl-swiper .swiper-slide{ width: 85%; }
-    .dpl-trip{ background-color:rgba(0,0,0,.7); }
-    .dpl-price-desc{ color: #1d467c; position: relative; background-color: #fff; }
-    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
-    .dpl-price-box .dpl-price-item{ border:1px solid #1d467c; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
-    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #1d467c; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont{  text-align: center; font-size: .26rem; color: #1d467c;}
-    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont.dpl-price-inner{padding:.15rem .2rem; }
-    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#1d467c; }
-    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
-    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top: .1rem; font-size: .22rem; color: #1d467c; line-height: .26rem; text-align: left; padding-left: .15rem; }
-    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #0c2c45; margin-top: .1rem; }
-    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px; padding-top: 40px;}
     .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
     .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
     .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
-    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
-    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #56a3e5; }
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; right:20px; }
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #ff9d14; }
     .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden; }
     .case-slide.swiper-slide-active{opacity: 1;}
-    .slide-case{height: 8.6rem;}
+    .slide-case{/* height: 7.6rem; */ color: #666;}
+    .hl-slide-box{ padding-bottom:.4rem;}
+    .hl-swiper{padding-left:.4rem;}
+    .hl-swiper .swiper-slide{ width: 80%; }
+    .hl-swiper .swp-img{position: relative;}
+    .hl-swiper .swp-img .hl-txt{ display: block; height: 24px; line-height: 24px; width: 100%; position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,.5); text-align: center; font-size: 12px; color: #fff;}
+    .hl-detail-text{padding:.5rem .9rem 0 .9rem; font-size: 14px; line-height: 24px; text-indent: 28px;}
     .case-img{ position: relative; }
     .case-img img{ width: 100%; height: auto; }
-    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #0c2c45; color: #fff; font-size: .24rem; text-align: center; }
+    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #ff9d14; color: #fff; font-size: .24rem; text-align: center; }
     .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
     .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
-    .case-line{padding:.25rem 0 .15rem 0; text-align: center;}
+    .case-line{padding:.25rem 0; text-align: center;}
     .case-line-box{ overflow: hidden; text-align: center; display: inline-block; }
     .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
     .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
@@ -132,8 +132,17 @@
     .case-line-box .line-item .line-dot{ display: block; }
     .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
     .case-line-box .line-item .line-name{ font-size: .2rem; }
-    .case-desc{  padding:0 .3rem .3rem .3rem; }
+    .case-desc{  padding:0 .3rem .3rem .3rem; text-align: left; height: 2.4rem; }
     .case-desc p{ font-size: .24rem; }
+    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
+    .dpl-price-box .dpl-price-item{ border:1px solid #fff; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #333; font-size: .3rem; background: #fff; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{ text-align: center; font-size: .24rem; color: #fff; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#fff; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top:2px; font-size: .2rem; color: #fff; line-height: .26rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #fff; margin-top: .1rem; }
 </style>
 <script type="text/javascript">
     (function() {
@@ -161,375 +170,359 @@
 	<!-- 测试后删除 End -->
     <div class="dpl-wrapper">
         <!-- 底部固定浮动 -->
-        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2" style="">
+        <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2">
             <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
             <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
         </div>
         <div class="dpl-container">
-            <!-- //头部Banner -->
-            <div class="dpl-banner">
-                <p class="dpl-logo"><span class="logo"></span></p>
-                <p class="dpl-topic"><img src="taiwan/img/topic.png"></p>
-                <div class="dpl-btm">
-                    <img src="taiwan/img/line.png">
-                </div>
-            </div>
-            <!-- //设计理念 -->
-            <div class="dpl-concept">
-                <div class="concept-box">
-                    <div class="concept-text">
-                        <img src="taiwan/img/concept.png">
-                    </div>
-                </div>
-            </div>
-            <!-- //行程亮点 -->
-            <div class="dpl-highlights">
-                <div class="dpl-title">
-                    <div class="s-title">
-                        <span>行程亮点</span>
-                        <em></em>
-                    </div>
-                </div>
-                <div class="dpl-hl-box">
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-1-1.jpg">
+            <div class="swiper-container tokyo-container">
+                <div class="swiper-wrapper">
+                    <!--slide1-->
+                    <section class="swiper-slide slide1">
+                    	<div class="s1-box">
+                    		<img class="ani p-tokyo1-1" src="tokyo/img/topic.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                    	</div>
+                    </section>
+                    <!--slide2-->
+                    <section class="swiper-slide slide2">
+                    	<div class="s2-box">
+                    		<img class="ani p-tokyo2-1" src="tokyo/img/concept-text-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" />
+                    	</div>
+                    </section>
+                    <!--slide3-->
+                    <section class="swiper-slide slide3">
+                        <div class="s3-box">
+                            <img class="ani p-tokyo3-1" src="tokyo/img/title-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                            <img class="ani p-tokyo3-2" src="tokyo/img/hl-p1-1.jpg" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.1s"/>
+                            <img class="ani p-tokyo3-3" src="tokyo/img/text-1.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
                         </div>
-                        <div class="hl-txt">
-                        	<p>诚品创立于1989年，因为带着原创的理念，融合了咖啡馆，文教店，特色伴手礼店跟手信店，它的意义早已超越了书店的概念，成为台湾文化的代表元素之一，是一座阅读与生活的博物馆。许多人来台湾，会把此处列为必经之地。</p>
-                        	<p>走进诚品大楼，除了书局，展现在你面前的是一个包含了文化、生活、风尚、书店、设计、视界、流行和美食的世界。这里的书，品种很齐全，24小时营业，每一个人都能找到适合自己的读物。据说，晚上11点之后，常常会在这里偶遇明星名人悠闲而坐，从容优雅地款待身心。</p>
+                    </section>
+                    <section class="swiper-slide slide3-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo3-4" src="tokyo/img/title1-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-1-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-1-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-1-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-1-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-1-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-1-5.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-2-1.jpg">
+                        <div class="hl-detail-text">
+                        	<p>店主河合先生出生于日本栃木县，原为一家制药公司的研究员，30岁时想凭借“技人”身份生活，毅然从公司辞职前往料理学校学习，陆续成为多个名店的厨师长，经过10年的修行，于1987年开了自己的店铺，【シベール】起名由希腊神话“自然守护女神”的名字而来。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>台北故宫博物馆的风格庄重典雅，雕刻无比精美，馆藏共约60万件，其中书画、织绣等易损展品每3个月更换1次，想看完全部展品要25年。相较而言，北京故宫算是遗址，台北故宫博物院藏的是精华。</p>
-                        	<p>这样一座宝库，近年因屡次推出兼具文创话题和经济效益的馆藏衍生品而轰动华语圈。比如先后出的康熙手书复制品“朕知道了”纸胶带，热销到缺货；“朕又来了”系列，包括夜光运动手环、密奏文件夹等超多产品，小6就很想要一把翡翠白菜伞；“朕就是这样汉子”，成网络金句，傲娇又霸气，天知道故宫接下来还会用什么好玩的创意刷新大家的视界？</p>
+                    </section>
+                    <!--slide4-->
+                    <section class="swiper-slide slide4">
+                        <div class="s4-box">
+                            <img class="ani p-tokyo4-1" src="tokyo/img/title2-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                            <img class="ani p-tokyo4-2" src="tokyo/img/text-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0.1s" >
+                        </div>
+                    </section>
+                    <section class="swiper-slide slide4-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo4-3" src="tokyo/img/title2-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-2-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-2-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-2-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-2-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-2-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-2-5.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-3-1.jpg">
+                        <div class="hl-detail-text">
+                        	<p>三溪园面积约为175000平方米，园内有包括10座国家重要文物在内的17座古建筑，巧夺天工，四季生辉。第二次世界大战时，三溪园曾受到很大的破坏，1953年(昭和28年)以原一族将三溪园移交给财团法人三溪园保胜会为契机开始维修，五年后基本恢复旧观。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>因老板是一位建筑师，归隐之后，在台北汐止山建了这座极具东方禅韵的园林餐厅，作为设计餐厅的代表作，早已闻名于世。就像有食客形容的：山林的绿意融进开阔的茶室，开放式的榻榻米与山林几乎毫无隔断，坐在榻榻米上吃饭，仿佛就置身于山林之中。</p>
-                        	<p>这里的菜式吸取了日本怀石料理的理念，选用当季的新鲜食材制作而成。来此吃一次饭，就像进行一场愉悦五官的禅修，让人在感受隐士山林的私房美味的同时，还时不时能发现惊艳味蕾的惊喜。每道菜端上来之时，衬着桌上的紫色宣纸，仿佛艺术品一般。</p>
+                    </section>
+                    <!--slide5-->
+                    <section class="swiper-slide slide5">
+                        <div class="s5-box">
+                            <img class="ani p-tokyo5-1" src="tokyo/img/title3-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-tokyo5-2" src="tokyo/img/text-3.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <section class="swiper-slide slide5-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo5-3" src="tokyo/img/title3-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-3-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-3-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-3-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-3-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-3-4.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-4-1.jpg">
+                        <div class="hl-detail-text">
+                        	<p>以牛筋为首的火锅添加了鸡肉、鱼肉、豆制品、蔬菜、大米等放在一个大锅内炖煮。也有鸡翅、炸鸡块等美食，菜单种类时丰富。相扑火锅不仅不会导致发胖还是一种非常好的增强体质的食品。一锅大杂烩的相扑火锅冒着热气，是暖胃热身的最佳选择，同时也能体验一番日本相扑横纲的美食情趣。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>在台湾，想要吃到最划算、最地道的日本料理，首选上引水产。一踏入它的地界，现代化鱼市感扑面而来，干净、卫生，各式海鲜，因陈列有术，卖相绝佳。什么青花鱼、秋刀鱼、帝王蟹、毛蟹、南非玫瑰龙虾，南非鲍鱼、象鼻蚌、黑鲍鱼、法国吉拉多生蚝及各种虾，螃蟹，价格合理。哪怕以往在别处很难买到的海鲜，在此要多少有多少，不怕你买，就怕你荷包不够鼓。</p>
-                        	<p>如果时间够，也可以直接在此加工现吃，蒸的，煮的，炸的，碳烤的，盐焗的，烧的，烘的，站着，坐着，想要怎么吃都行。或者随便进一家日料店，点个最便宜的套餐，就能把鲷鱼、旗鱼、鲑鱼、鲔鱼、花鲷、甜虾、鲑鱼子等都拿下，样样好吃到让人想哭。</p>
+                    </section>
+                    <!--slide6-->
+                    <section class="swiper-slide slide6">
+                        <div class="s6-box">
+                            <img class="ani p-tokyo6-1" src="tokyo/img/title4-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-tokyo6-2" src="tokyo/img/text-4.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <section class="swiper-slide slide5-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo5-3" src="tokyo/img/title4-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-4-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-4-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-4-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-4-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-4-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-4-5.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-5-1.jpg">
+                        <div class="hl-detail-text">
+                        	<p>江户东京博物馆是一栋造型奇特的博物馆，拥有两层宽敞展示厅，以展出东京的历史发展为主，一入馆可看见一座仿制的木拱式日本桥，日本桥自古以来即为东京的代表建筑，多次出现在精美的浮世绘上而闻名。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>云门舞集由享誉世界的编舞家林怀民创办，是一个台湾现代舞蹈表演团体，以独特的创意和精湛舞技见长，获得世界各地观众与舞评家的热烈赞赏。情感不磨灭，对美的追求就不会停止，一起去深入云门的内心世界，看看深喑美感的大家林怀民的作品，一起去解冻在都市里炼就的理智之心，感受心底最真实情绪的流动。</p>
-                        	<p>云门舞者不是在演绎故事，而是通过呈献肢体动作，让你自己去想象真正的故事。每个人都可以借着演员的动作与舞美，将自己的故事代入舞中。虔诚的观众会在观舞时，代入个人感情，有的甚至感动到潸然泪下，都是再正常不过的事。</p>
+                    </section>
+                    <!--slide7-->
+                    <section class="swiper-slide slide7">
+                        <div class="s7-box">
+                            <img class="ani p-tokyo7-1" src="tokyo/img/title5-1.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-tokyo7-2" src="tokyo/img/text-5.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-5-5.jpg" alt=""></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="taiwan/img/hl-6-1.jpg">
-                        </div>
-                        <div class="hl-txt">
-                        	<p>纸箱王是台湾最早以纸为主题的观光创意园区。创办人对各种纸的特性极其了解，在天马行空的创造巧思下，创造出一个让人叹为观止又涵养人心的异想世界。园内展示、贩售的纸品，囊括了大家生活所需的方方面面，包括坚固耐重的纸箱桌椅，写实富有创意造型纸灯饰、到可以烹煮纸火锅餐碗等。</p>
-                        	<p>另外，还有高耸林立在园区中的世界地标，及逼真写实的纸箱动物展示区。透过纸的特性与独特的结构设计技法，呈现全台唯一的纸箱动物园，让人人都看得懂，这是一座无门槛的纸艺创作殿堂哦。逛累了，还能在纸做的餐厅里，体验一场奇特的用餐之旅。</p>
+                    </section>
+                    <section class="swiper-slide slide5-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo5-3" src="tokyo/img/title5-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
                         </div>
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="taiwan/img/hl-6-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-5-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-5-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-5-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-5-4.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- //参考行程 -->
-            <div class="dpl-trip">
-                <div class="dpl-title dpl-trip-title">
-                    <div class="s-title">
-                        <span>参考行程</span>
-                        <em></em>
-                    </div>
-                </div>
-                <div class="dpl-trip-detail">
-                    <div class="swiper-container intro-case-container">
-                        <div class="swiper-wrapper intro-case-wrapper">
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY1</span>
-                                        <span class="case-city"><i></i>台北</span>
-                                        <img src="taiwan/img/trip-pic-01.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">中国大陆</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 搭乘航班飞往台北，展开精彩旅程。</p>
-                                        <p>• 下午，去台北最美的街道永康和青田，体会光阴的故事，品尝各式美食，那里的黄昏很美哦。</p>
-                                        <p>• 晚上，宁夏夜市边逛边吃。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide day2">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY2</span>
-                                        <span class="case-city"><i></i>台北故宫博物院</span>
-                                        <img src="taiwan/img/trip-pic-02.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 参观台湾规模最大的博物馆——台北故宫博物院。</p>
-                                        <p>• 逛松山文创园，体验亲手制作手工艺品的快感。</p>
-                                        <p>• 去上引水产，尽情挑选海鲜，放开享用美食。</p>
-                                        <p>• 去国父纪念馆参观，如果赶上正点时间，还可以观看仪队交接仪式哦。</p>
-                                        <p>• 参观台北 101大楼，在35层的星巴克点一杯咖啡，坐下来体会慢生活，俯瞰台北夜景。</p>
-                                        <p>• 逛台北文化地标——诚品书店信义旗舰店。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY3</span>
-                                        <span class="case-city"><i></i>山城九份</span>
-                                        <img src="taiwan/img/trip-pic-03.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 早上，逛阳明山国家公园，里头的阳明书屋原为蒋中正的行馆。</p>
-                                        <p>• 午间，去食养山房吃午饭，体验茶道。</p>
-                                        <p>• 下午，驱车前往著名的山城九份，逛累了还可以去阿妹茶楼歇歇腿，喝个下午茶。</p>
-                                        <p>• 我们特地安排了平溪十分车站放天灯，重现经典电影《那些年我们一起追过的女孩》最浪漫的一刻。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY4</span>
-                                        <span class="case-city"><i></i>清境农场</span>
-                                        <img src="taiwan/img/trip-pic-04.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">南投</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 驱车前往南投纸箱王，动手制作属于自己的 DIY 作品，于主题餐厅品味难忘的午餐体验。</p>
-                                        <p>• 去著名的清境农场，这里因清新空气，境地优雅似仙居闻名于世，是台湾最佳的高山旅游胜地。</p>
-                                        <p>• 逛清境小瑞士花园。</p>
-                                        <p>• 夜间，在民宿，喝茶，数星星。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY5</span>
-                                        <span class="case-city"><i></i>九族文化村</span>
-                                        <img src="taiwan/img/trip-pic-05.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">南投</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 逛集集镇，在古老的建筑和街景中，感受当年繁华的商贸痕迹，回味其百年历史的文化积淀。</p>
-                                        <p>• 乘坐轮船环游日月潭，还可以乘缆车鸟瞰日月潭湖景。</p>
-                                        <p>• 去九族文化村参观，这是唯一获米其林 2星推荐的主题乐园。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY6</span>
-                                        <span class="case-city"><i></i>云门舞集</span>
-                                        <img src="taiwan/img/trip-pic-06.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">南投</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 去云门舞集看演出，享受全身的感官被世界顶级的独特创意和精湛的舞技包裹的感觉。</p>
-                                        <p>• 去西门町、信义商圈买买买。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY7</span>
-                                        <img src="taiwan/img/trip-pic-07.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">台北</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">中国大陆</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 搭乘航班返回大陆，结束一周愉快的文艺台湾之旅。</p>
-                                    </div>
+                        <div class="hl-detail-text">
+                        	<p>浅草的抹茶冰品店壽々喜園是现在日本超人气的甜品店。第七级浓度的抹茶冰淇淋更是被媒体广泛报道，称其为世界第一浓度抹茶冰激凌而火爆日本。所选用的抹茶是连续三年被日本农林水产大臣颁奖的静冈县藤枝市产抹茶，经过日本茶叶鉴定师、甜品师等专业人士鉴定，最大程度保留抹茶原有的风味。</p>
+                        </div>
+                    </section>
+                    <!--slide8-->
+                    <section class="swiper-slide slide8">
+                        <div class="s8-box">
+                            <img class="ani p-tokyo8-1" src="tokyo/img/title6-1.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.1s" >
+                            <img class="ani p-tokyo8-2" src="tokyo/img/text-6.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                    </section>
+                    <section class="swiper-slide slide5-1">
+                        <div class="s3-box-detail">
+                            <img class="ani p-tokyo5-3" src="tokyo/img/title6-2.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                        </div>
+                        <div class="hl-slide-box">
+                            <div class="swiper-container hl-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-6-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-6-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-6-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-6-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="tokyo/img/hl-6-5.jpg" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
-                        <!-- 分页器 -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- //价格说明 -->
-            <div class="dpl-price-desc">
-                <div class="dpl-title dpl-price-title">
-                    <div class="s-title">
-                        <span>价格说明</span>
-                        <em></em>
-                    </div>
-                </div>
-                <div class="dpl-price-box">
-                    <div class="dpl-price-item">
-                        <h4>参考报价</h4>
-                        <div class="dpl-price-cont">
-                            <p><span class="pr1"><i>2</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                        <div class="hl-detail-text">
+                        	<p>来自怀石料理的发祥地京都，店内装饰蒂法尼和梵高的原画彩绘玻璃，是日本与欧洲文化的强烈碰撞；餐席上美轮美奂的盏盘筷碗，色香味俱全的精致料理，赏心悦耳的竖琴演奏，一次极致梦幻的日式餐饮服务和舌尖上的盛享。料理强调的是当季的蔬菜美味，采用尽可能保持原味的烹饪方式，在极少人工调味的状态下让用餐者体会到大地在每个季节带给人类的恩惠。</p>
                         </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格包含</h4>
-                        <div class="dpl-price-cont dpl-price-inner">
-                            <img src="taiwan/img/price.png" >
+                    </section>
+                    <!--slide10-->
+                    <section class="swiper-slide slide10">
+                        <div class="s-title">
+                            <span>参考行程</span>
+                            <em></em>
                         </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格不含</h4>
-                        <div class="dpl-price-cont">私人消费及费用包含中未提及的一切费用</div>
-                    </div>
+                        <div class="dpl-trip-detail">
+                            <div class="swiper-container intro-case-container">
+                                <div class="swiper-wrapper intro-case-wrapper">
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY1</span>
+                                                <span class="case-city"><i></i>横滨未来港</span>
+                                                <img src="tokyo/img/trip-pic-01.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">国内</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">横滨</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>• 在机上好好休息，期待即将到来的精彩旅程</p>
+                                                <p>• 酒店周边闲逛，欣赏横滨未来港夜景</p>
+                                                <p>• 野毛地区深夜食堂（一个主选，三个备选）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY2</span>
+                                                <span class="case-city"><i></i>横滨拉面博物馆</span>
+                                                <img src="tokyo/img/trip-pic-02.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">横滨</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">东京</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>• 今天睡到自然醒</p>
+                                                <p>• 三溪園</p>
+                                                <p>• 横滨拉面（拉面博物馆内）</p>
+                                                <p>• 横滨红砖仓库（美术展及下午茶）</p>
+                                                <p>• 烤肉（薩摩焼肉　黒桜）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY3</span>
+                                                <span class="case-city"><i></i>江戸NOREN</span>
+                                                <img src="tokyo/img/trip-pic-03.jpg" alt="">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">东京</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>• 江戸東京博物館</p>
+                                                <p>• 江戸NOREN（9月、11月可安排观看相扑比赛）</p>
+                                                <p>• 相扑火锅或天妇罗（一个主选，一个备选）</p>
+                                                <p>• 浅草寺及下町游览</p>
+                                                <p>• 定制抹茶（壽々喜園 ）</p>
+                                                <p>• 晴空塔</p>
+                                                <p>• 鳗鱼饭（ひつまぶし備長）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY4</span>
+                                                <span class="case-city"><i></i>银座</span>
+                                                <img src="tokyo/img/trip-pic-04.jpg">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">东京</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>• 明治神宫</p>
+                                                <p>• 日式定食 （手しごとや 咲くら  農林水産省内）</p>
+                                                <p>• 定制咖啡（KOFFEE MAMEYA）</p>
+                                                <p>• 六本木</p>
+                                                <p>• 银座</p>
+                                                <p>• 怀石料理或者日式柴鱼料理 怀石料理（一个主选，一个备选）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-slide">
+                                        <div class="slide-case">
+                                            <div class="case-img">
+                                                <span class="case-day">DAY5</span>
+                                                <img src="tokyo/img/trip-pic-05.jpg">
+                                            </div>
+                                            <div class="case-line">
+                                                <div class="case-line-box">
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">东京</span>
+                                                    </div>
+                                                    <div class="line-item">
+                                                        <span class="line-dot"><i class="dot"></i></span>
+                                                        <span class="line-name">国内</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-desc">
+                                                <p>• 早餐后自由活动</p>
+                                                <p>• 飞机起飞前送至机场</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 分页器 -->
+                                <div class="swiper-pagination swiper-pagination-h"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide11-->
+                    <section class="swiper-slide slide11">
+                        <div class="s-title">
+                            <span>价格说明</span>
+                            <em></em>
+                        </div>
+                        <div class="s10-box">
+                            <div class="dpl-price-box">
+                                <div class="dpl-price-item">
+                                    <h4>参考报价</h4>
+                                    <div class="dpl-price-cont">
+                                        <p><span class="pr1"><i>1.5</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格包含</h4>
+                                    <div class="dpl-price-cont">
+                                    	<img src="tokyo/img/price.png"/>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格不含</h4>
+                                    <div class="dpl-price-cont">国际机票、签证、私人消费及其他报价包含未提及的费用</div>
+                                </div>
+                            </div>
+                            <div class="dpl-footer">
+                                <p>以上产品最终解释权归6人游所有</p>
+                                <span class="dpl-footer-label"></span>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-            <div class="dpl-footer">
-                <p>以上产品最终解释权归6人游所有</p>
-                <span class="dpl-footer-label"></span>
+                <div class="arrow-box">
+                    <img src="tokyo/img/arrow.png" id="array">
+                </div>
             </div>
         </div>
         <!-- 分享弹层 -->
@@ -543,9 +536,31 @@
         </div>
     </div>
     <script src="common/js/swiper.min.js"></script>
+    <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
+        var mySwiper = new Swiper ('.tokyo-container', {
+            direction: 'horizontal',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            watchSlidesProgress: true,
+            onSetTransition: function(swiper, speed) {
+                for (var i = 0; i < swiper.slides.length; i++){
+                    es = swiper.slides[i].style;
+                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+                }
+            },
+        })
         var swiper = new Swiper('.intro-case-container', {
-            pagination: '.swiper-pagination',
+            pagination: '.swiper-pagination-h',
             paginationType: 'fraction',
             slidesPerView: 'auto',
             centeredSlides: true,
@@ -554,8 +569,11 @@
         });
         var hlSwiper = new Swiper('.hl-swiper', {
             slidesPerView: 'auto',
+            centeredSlides : true,
+            loop : true,
             spaceBetween: 10
         });
     </script>
+    <script src="/statics/app/scheme/js/common_detail.js?v=20170912" type="text/javascript"></script>
 </body>
 </html> 
