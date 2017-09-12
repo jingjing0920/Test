@@ -61,17 +61,17 @@
     /* content */
     .dpl-body{ height: 100%; position: relative; }
     .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
-    .arrow-box{position: absolute;bottom: -10px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
+    .arrow-box{position: absolute;bottom: -15px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
     #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 30px; height: 30px; z-index: 999;}
     @-webkit-keyframes start {
-	    0%,30% {opacity: 0;-webkit-transform: translate(10px,0);}
+	    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
 	    60% {opacity: 1;-webkit-transform: translate(0,0);}
-	    100% {opacity: 0;-webkit-transform: translate(-8px,0);}
+	    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
     }
     @keyframes start {
-        0%,30% {opacity: 0;transform: translate(10px,0);}
-	    60% {opacity: 1;transform: translate(0,0);}
-	    100% {opacity: 0;transform: translate(-8px,0);}
+        0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	    60% {opacity: 1;-webkit-transform: translate(0,0);}
+	    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
     }
     .swiper-container {width: 100%; height: 100%;}
     .swiper-slide img{width:100%;}
@@ -539,7 +539,7 @@
     <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
         var mySwiper = new Swiper ('.tokyo-container', {
-            direction: 'horizontal',
+            direction: 'vertical',
             mousewheelControl : true,
             onInit: function(swiper){
                 swiperAnimateCache(swiper);
@@ -574,6 +574,6 @@
             spaceBetween: 10
         });
     </script>
-    <script src="/statics/app/scheme/js/common_detail.js?v=20170912" type="text/javascript"></script>
+    <script src="/statics/app/scheme/js/common_detail.js?v=20170913" type="text/javascript"></script>
 </body>
 </html> 
