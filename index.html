@@ -1,24 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>陪孩子在南半球过暖冬</title>
-<meta name="keywords" content="深度策划 澳大利亚">
-<meta name="description" content="陪孩子在南半球过暖冬 - 与袋鼠蹦跳、和企鹅摇摆、喂野生海豚">
+<title>食尚东京</title>
+<meta name="keywords" content="深度策划 日本">
+<meta name="description" content="食尚东京-视觉味觉的轻奢之旅">
 <meta name="HandheldFriendly" content="true">
 <meta name="MobileOptimized" content="width">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
-<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css"> 
+<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="common/css/animate.min.css">  
 <style type="text/css">
     * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
     *:before, *:after { box-sizing: border-box; max-height: 100000px; }
-    body, html { width: 100%; }
+    body, html { width: 100%; height: 100%; }
     html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
     html {/* font-size: 100px; */ }
-    body{font-size: .28rem; line-height: 1.5; font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #fff; color: #3a383c;  margin:0 auto; }
+    body{font-size: .28rem; font-weight: 300; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #ffffff; color: #fff;  margin:0 auto; }
     img{ border: 0;vertical-align: middle;}
     a { background-color: transparent; text-decoration: none; }
     a:active, a:hover { outline: 0; text-decoration: none;}
@@ -38,7 +39,7 @@
     .dpl-ft-cell2 .btn-share { width: 30%; display: table-cell; vertical-align: middle; min-width: 44px; max-width: 60px; height: 44px; text-align: center; border-right: 1px solid #ededed; font-size: 14px; color: #333;}
     .dpl-ft-cell2 .dpl-btn-submit{ width: 70%; }
     .btn-share .iconshare { display: inline-block; width: 20px; height: 20px; vertical-align: middle; position: relative;  top: -1px; margin-right: 5px; background: url(common/img/icon-share.png) center center no-repeat; background-size: 20px 20px;}
-    .dpl-footer{ background:rgba(0,0,0,.7); text-align: center; font-size: .26rem; color: #b6b6b6; padding-top: .6rem; padding-bottom: .7rem; }
+    .dpl-footer{ text-align: center; font-size: 10px; color: #b6b6b6; padding-top: 0; padding-bottom: .7rem; }
     .dpl-footer .dpl-footer-label{ display: inline-block; width: 1.74rem; height: .43rem; margin-top: .4rem; background: url(common/img/footer-label.png) no-repeat; background-size: contain; }
     /* actionsheet */
     .ft-actionsheet { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; opacity: 0; pointer-events: none; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end; background: rgba(0, 0, 0, 0.5); }
@@ -58,70 +59,63 @@
         .ft-actionsheet button:not(:last-child) { border: 0; background-position: left top; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ccc), to(#ccc)); background-repeat: repeat-x; -webkit-background-size: 100% 1px; }
     }
     /* content */
-    .dpl-body{ width: 100%; background:url(australia/img/bg.jpg) center bottom no-repeat; background-size: cover; background-attachment: fixed;}
-    .dpl-body:before { content: '';  position: fixed;  z-index: -1;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: url(australia/img/bg.jpg) center 0 no-repeat;  background-size: cover;}
-    .dpl-wrapper{ position: relative; }
-    .dpl-container{ width: 100%; }
-    .dpl-container img{ width:100%; height: auto; vertical-align: middle; }
-    .dpl-banner {}
-    .dpl-banner .dpl-logo{text-align: right; padding-right: .3rem; padding-top: .3rem;}
-    .dpl-banner .dpl-logo .logo{ display: inline-block; width: 1.2rem; height: 1.29rem; background: url(australia/img/logo.png); background-size: cover; }
-    .dpl-banner .dpl-topic{text-align: right; padding-top:0.8rem;}
-    .dpl-banner .dpl-topic img{ width: 100%; height: auto;}
-    .dpl-btm{ padding-top: 6.4rem; }
-    .dpl-title{text-align: center; padding:.6rem 0;}
-    .dpl-title img{ width: 100%; }
+    .dpl-body{ height: 100%; position: relative; }
+    .dpl-wrapper,.dpl-container{ width: 100%; height: 100%; }
+    .arrow-box{position: absolute;bottom: -15px;left: 0;right: 0;margin: 0 auto;width: 50%;height: 80px;z-index: 900;}
+    #array{-webkit-animation: start 1.5s infinite ease-in-out;animation: start 1.5s infinite ease-in-out; display:block;margin: 15px  auto 0 auto;width: 30px; height: 30px; z-index: 999;}
+    @-webkit-keyframes start {
+	    0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	    60% {opacity: 1;-webkit-transform: translate(0,0);}
+	    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+    }
+    @keyframes start {
+        0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	    60% {opacity: 1;-webkit-transform: translate(0,0);}
+	    100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+    }
+    .swiper-container {width: 100%; height: 100%;}
+    .swiper-slide img{width:100%;}
+    .page-container .slide1{ background: url(sakura/img/bg-banner.jpg) center center no-repeat;background-size: cover; }
+    .page-container .slide2{ background: url(sakura/img/bg-design.jpg) center top no-repeat;background-size: cover; }
+    .page-container .slide3{ background: url(sakura/img/bg-hl-01.jpg) center top no-repeat;background-size: cover; } 
+    .page-container .slide4{ background: url(sakura/img/bg-hl-02.jpg) center top no-repeat;background-size: cover;  }
+    .page-container .slide5{ background: url(sakura/img/bg-hl-03.jpg) center top no-repeat;background-size: cover; }
+    .page-container .slide6{ background: url(sakura/img/bg-hl-04.jpg) center top no-repeat;background-size: cover;  }
+    .page-container .slide7{ background: url(sakura/img/bg-hl-05.jpg) center top no-repeat;background-size: cover;  }
+    .page-container .slide8{ background: url(sakura/img/bg-hl-06.jpg) center top no-repeat;background-size: cover;  }
+    .page-container .slide10{ background: url(sakura/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
+    .page-container .slide11{ background: url(sakura/img/bg-price.jpg) center center no-repeat;background-size: cover; } 
+    .slide-cover{padding:.8rem .5rem 0 .5rem;}
+    .slide-textbox{padding:.3rem .5rem 0 .5rem;}
     .s-title{ text-align: center; padding-top: .5rem; }
-    .s-title span{ display: block; font-size: .48rem; color: #fff; line-height: .5rem; }
-    .s-title em{display: inline-block; height: 4px; border-top: 1px solid #fff; width: 1.5rem;}
-    .dpl-trip-title{padding:.3rem 0;}
-    .dpl-price-title{padding:.3rem 0;}
-    .dpl-price-title .s-title{color: #1d467c;}
-    .dpl-price-title .s-title span{color: #1d467c;}
-    .dpl-price-title em{border-top-color:#1d467c}
-    .dpl-concept{ position: relative; background-color: #fff; }
-    .dpl-concept .concept-box{ position: relative;}
-    .dpl-concept .concept-box .concept-text{ position: relative; z-index: 5; padding:.3rem 0 .5rem 0; }
-    .dpl-concept .map{ position: relative; margin-top: -3.2rem; z-index: 1; }
-    .dpl-highlights .dpl-title{background:rgba(0,0,0,.7); padding:.3rem 0; }
-    .dpl-hl-box{ background-color: #fff;  }
-    .dpl-hl-item{padding-bottom: .2rem;}
-	.dpl-hl-item .hl-img{width: 100%;}
-    .dpl-hl-item .hl-tit{padding-top: .7rem;}
-    .dpl-hl-item .hl-txt{ padding:.4rem .6rem; font-size: 14px; line-height: 1.6; text-indent: 28px;  color: #666; word-break: break-all; }
-    .dpl-hl-item .hl-txt h4{ margin-bottom: 8px; font-size: 18px; color: #e4ad66;}
-    .dpl-hl-item .hl-txt p{ margin-bottom: 15px;}
-    .dpl-hl-item .hl-slide-box{ padding-bottom:.4rem;}
-    .dpl-hl-item .hl-swiper{padding-left:.4rem;}
-    .dpl-hl-item .hl-swiper .swiper-slide{ width: 85%; }
-    .dpl-trip{ background-color:rgba(0,0,0,.7); }
-    .dpl-trip-detail{padding-bottom: .3rem;}
-    .dpl-price-desc{ color: #1d467c; position: relative; background-color: #fff; }
-    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
-    .dpl-price-box .dpl-price-item{ border:1px solid #4a515c; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
-    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #fff; font-size: .3rem; background: #4a515c; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont{  text-align: center; font-size: .26rem; color: #4a515c;}
-    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
-    .dpl-price-box .dpl-price-item .dpl-price-cont.dpl-price-inner{padding:.15rem .2rem; }
-    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#4a515c; }
-    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
-    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top: .1rem; font-size: .22rem; color: #4a515c; line-height: .26rem; text-align: left; padding-left: .15rem; }
-    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #0c2c45; margin-top: .1rem; }
-    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px;}
+    .s-title span{ display: block; font-size: .48rem; color: #db5a5a; line-height: .5rem; }
+    .s-title em{display: inline-block; height: 4px; border-top: 1px solid #db5a5a; width: 1.5rem;}
+    .intro-case-container{ width: 100%; max-height: 100%; padding-bottom: 50px; padding-top: 40px;}
     .intro-case-container .swiper-pagination-bullet{background: rgba(255,255,255,.5); }
     .intro-case-container .swiper-pagination-bullet-active{background:rgba(224,151,45,.8);}
     .intro-case-container.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
-    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; }
-    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #f3793c; }
+    .intro-case-container .swiper-pagination-fraction{ display: inline-block; font-size: 14px; color: #fff; right:20px; }
+    .intro-case-container .swiper-pagination-fraction .swiper-pagination-current{ color: #ff9d14; }
     .case-slide{ width: 80%; background: #f5f5f7;  -webkit-border-radius: 6px; border-radius: 6px; overflow: hidden; }
     .case-slide.swiper-slide-active{opacity: 1;}
-    .slide-case{height: 7.2rem;}
+    .slide-case{height: 7.6rem; color: #666;}
+    .hl-slide-box{ padding-bottom:.4rem;}
+    .hl-swiper{padding-left:0;overflow: visible;}
+    .hl-swiper .swiper-slide{ width: 100%; }
+    .hl-swiper.swiper-container-horizontal>.swiper-pagination-progress{ bottom: -8px; top: auto; height: 8px;}
+    .hl-swiper .swiper-pagination-progress{background: rgba(219,90,90,.2);}
+    .hl-swiper .swiper-pagination-progress .swiper-pagination-progressbar{background: #db5a5a;}
+    .hl-swiper .swp-img{position: relative;}
+    .hl-swiper .swp-img .hl-txt{ display: block; height: 24px; line-height: 24px; width: 100%; position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,.5); text-align: center; font-size: 12px; color: #fff;}
+    .hl-detail-text{padding:.5rem .6rem 0 .6rem; }
+    .hl-detail-text h2{ font-size: 24px; color: #db5a5a; text-align: center;font-weight: 300; margin-bottom: .2rem;}
+    .hl-detail-text p{ font-size: 14px; line-height: 24px; text-indent: 28px; color: #4b4b4b;font-family: 'PingFang SC',SimHei,"Helvetica Neue",Helvetica,STHeiTi,sans-serif; font-weight: 300;}
     .case-img{ position: relative; }
     .case-img img{ width: 100%; height: auto; }
-    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #f3793c; color: #fff; font-size: .24rem; text-align: center; }
+    .case-img .case-day{ width: 1rem; height: .4rem; line-height: .4rem; position: absolute; left:.15rem; top: 0; background-color: #db5a5a; color: #fff; font-size: .24rem; text-align: center; }
     .case-img .case-city{ position: absolute; left: 0; bottom: .15rem; width: 100%; text-align: center; color: #fff; }
     .case-title{ font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333; padding:5px 15px;font-family: PingFangSC-Regular;}
-    .case-line{padding:.25rem 0 .15rem 0; text-align: center;}
+    .case-line{padding-top:.25rem; text-align: center;}
     .case-line-box{ overflow: hidden; text-align: center; display: inline-block; }
     .case-line-box .line-item{ float: left; display: inline-block; font-size: .24rem; padding:0 .2rem; position: relative; }
     .case-line-box .line-item:after{ content: ''; display: inline-block; width: .25rem; height: 10px; position: absolute; right: 0; top: .15rem; border-top: 1px dotted #3e3c40; }
@@ -129,8 +123,39 @@
     .case-line-box .line-item .line-dot{ display: block; }
     .case-line-box .line-item .line-dot .dot{ display: inline-block; width: .2rem; height: .2rem; border-radius: 50%; border:2px solid #3e3c40; background-color: #fff; }
     .case-line-box .line-item .line-name{ font-size: .2rem; }
-    .case-desc{  padding:0 .3rem .3rem .3rem; }
+    .case-desc{  padding:0 .3rem .3rem .3rem; text-align: left; height: 2.4rem; }
     .case-desc p{ font-size: .24rem; }
+    .dpl-trip-detail{ height: 100%; padding-bottom: 2.3rem;  }
+    .dpl-trip-style2{ position: relative; height: 100%; padding:.5rem;}
+    .dpl-trip-style2 .swiper-slide{ height: auto;}
+    .dpl-trip-list{ display: block; padding:0 10px}
+    .dpl-trip-list .dpl-trip-item{ display: block; overflow: hidden; position: relative; padding-left: 50px; color: #666666; margin-bottom: 15px;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-num{ display: block; width: 40px; height: 30px; position: absolute; left: 0; font-size: 12px; color: #999; font-weight: 500; text-align: center; line-height: 30px; font-style: italic; background: url(sakura/img/icon-day.png) no-repeat; background-size: cover; }
+    .dpl-trip-list .dpl-trip-item .dpl-trip-info h4{ font-size: 14px; margin-bottom: 5px;color: #db5a5a;font-style: italic; font-weight: 500;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-text{font-size: 12px;}
+    .dpl-trip-list .dpl-trip-item .dpl-trip-text .text-2{ font-size: 10px; color: #999999; margin-top: 5px;}
+    .dpl-price-box{ padding:.4rem .4rem .2rem .4rem; }
+    .dpl-price-box .dpl-price-item{ border:1px solid #db5a5a; padding:.4rem .3rem .3rem .3rem; position: relative; margin-bottom: .34rem; }
+    .dpl-price-box .dpl-price-item h4{ display: inline-block; width: 1.8rem; text-align: center; color: #ffffff; font-size: .3rem; background: #db5a5a; padding:0 .2rem; position: absolute; top:-.2rem; left:50%; margin-left: -.9rem; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont{ text-align: center; font-size: .24rem; color: #db5a5a; }
+    .dpl-price-box .dpl-price-item .dpl-price-cont img{ width: 100%; }
+    .dpl-price-box .dpl-price-item .pr1{ display: inline-block; font-size: .32rem; color:#db5a5a; }
+    .dpl-price-box .dpl-price-item .pr1 i{ font-weight: bold; font-size: .48rem;}
+    .dpl-price-box .dpl-price-item .pr2{ display: inline-block; position: relative; top:2px; font-size: .2rem; color: #db5a5a; line-height: .26rem; text-align: left; padding-left: .15rem; }
+    .dpl-price-box .dpl-price-item .price-date{ padding-top: .1rem; border-top:1px solid #fff; margin-top: .1rem; }
+    .s2-box{ padding-top: .8rem;}
+    .swiper-slide img.text1-1{ width: 3.4rem; height: auto; position: absolute; left: .6rem; top: .6rem;}
+    .swiper-slide img.text1-2{ width: .86rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
+    .swiper-slide img.text2-1{ width: 1.8rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
+    .swiper-slide img.text2-2{ width: 1.36rem; height: auto; position: absolute; left: .6rem; top: .6rem;}
+    .swiper-slide img.text3-1{ width: 3.1rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
+    .swiper-slide img.text3-2{ width: 0.88rem; height: auto; position: absolute; right: .6rem; top: 4.9rem;}
+    .swiper-slide img.text4-1{ width: 3.1rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
+    .swiper-slide img.text4-2{ width: 0.88rem; height: auto; position: absolute; left: .6rem; top: .6rem;}
+    .swiper-slide img.text5-1{ width: 3.1rem; height: auto; position: absolute; left: .6rem; top: .6rem;}
+    .swiper-slide img.text5-2{ width: 0.88rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
+    .swiper-slide img.text6-1{ width: 1.6rem; height: auto; position: absolute; left: .6rem; top: .6rem;}
+    .swiper-slide img.text6-2{ width: 0.88rem; height: auto; position: absolute; right: .6rem; top: .6rem;}
 </style>
 <script type="text/javascript">
     (function() {
@@ -150,470 +175,276 @@
 <script src="/statics/js/jquery.min.js"></script>
 </head>
 <body class="dpl-body">
-    <div class="dpl-wrapper">
+	<div class="dpl-wrapper">
         <!-- 底部固定浮动 -->
         <div id="order_box" class="dpl-ft-bar dpl-ft-btn dpl-ft-cell2">
             <a href="javascript:;" class="btn-share lc-share"><i class="iconshare"></i>分享</a>
             <a href="javascript:;" class="dpl-btn-submit lc-order">咨询旅行顾问</a>
         </div>
         <div class="dpl-container">
-            <!-- //头部Banner -->
-            <div class="dpl-banner">
-                <!--<p class="dpl-logo"><span class="logo"></span></p>-->
-                <p class="dpl-topic"><img src="australia/img/topic.png"></p>
-                <div class="dpl-btm"></div>
-            </div>
-            <!-- //设计理念 -->
-            <div class="dpl-concept">
-                <div class="concept-box">
-                    <div class="concept-text">
-                        <img src="australia/img/concept.png">
-                    </div>
-                </div>
-            </div>
-            <!-- //行程亮点 -->
-            <div class="dpl-highlights">
-                <div class="dpl-title">
-                    <img src="australia/img/nav-01.png"/>
-                </div>
-                <div class="dpl-hl-box">
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-1-1.jpg">
+            <div class="swiper-container page-container">
+                <div class="swiper-wrapper">
+                    <!--slide1-->
+                    <section class="swiper-slide slide1">
+                    	<div class="s1-box">
+                    		<img class="ani p-sakura1-1" src="sakura/img/topic.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" >
+                    	</div>
+                    </section>
+                    <!--slide2-->
+                    <section class="swiper-slide slide2">
+                    	<div class="s2-box">
+                    		<img class="ani p-sakura2-1" src="sakura/img/concept-text-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s" />
+                    		<img class="ani p-sakura2-1" src="sakura/img/concept-text-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s" />
+                    	</div>
+                    </section>
+                    <!--slide3-->
+                    <section class="swiper-slide slide3">
+                    	<div class="slide-cover">
+                    		<img class="ani text1-1" src="sakura/img/text1-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.1" swiper-animate-delay="0s"/>
+                    		<img class="ani text1-2" src="sakura/img/text1-2.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.3s"/>
                         </div>
-                        <div class="hl-txt">
-                        	<p>摩顿岛是世界第三大沙岛，海岛的98％是国家公园属地，聪慧的海豚和许多其他的海洋生物都快乐地生活在这个美丽的世外桃源，所以被称为“海豚岛”。岛上热带植物环绕，山崖丘陵起伏跌宕。难以置信的是山崖深处居然还有沙漠！</p>
-                        	<h4>喂海豚</h4>
-                        	<p>曾经以为，在水族馆是与海豚最近的距离，然而，海豚岛带给大家的，是与野生海豚零距离的接触。每天一到“饭点”（大约晚上6点），他们就成群结队的来到天阁露玛海岸边浅水区，等待从天而降的美味。</p>
-                        	<p>还可以到海洋深处，与海龟、鲸鱼、“美人鱼”（也叫海牛）、魔鬼鱼等海洋生物亲密接触。</p>
-                        </div>
+                    </section>
+                    <section class="swiper-slide slide3-1">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-7.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-1-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-1-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-1-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-1-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-1-5.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                        <div class="hl-txt">
-                        	<h4>沙漠越野</h4>
-                        	<p>爬上200英尺高的沙丘，从躺在滑板上被教练推下的那一刻起，你就能感受到乘“沙”破浪的极速刺激。</p>
-                        	<p>沙地摩托也是不容错过的岛上活动项目。由资深“老司机”带领，教你学会驾驶，然后带你深入岛内，穿过茂密的热带丛林，驶入岛中央神秘的沙地。</p>
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>每逢樱花盛开时，河津町都会举办「樱花祭」，届时可以品尝到日本当地的风味小吃，热闹非凡。在樱花树下席地而坐，一杯清酒亦或一杯清茶，以或静或闹的方式感受生命的绚烂多姿。河津町有七处知名的瀑布，名为河津七泷，位于山林之间，在这里可以欣赏到七座各有特色的瀑布，随后造访天城山隧道，探寻诺贝尔文学奖《伊豆的舞女》的故事场景。</p>
                         </div>
+                    </section>
+                    <!--slide4-->
+                    <section class="swiper-slide slide4">
+                        <div class="slide-cover">
+                    		<img class="ani text2-1" src="sakura/img/text2-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.1" swiper-animate-delay="0s"/>
+                    		<img class="ani text2-2" src="sakura/img/text2-2.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.2" swiper-animate-delay="0.2s"/>
+                        </div>
+                    </section>
+                    <section class="swiper-slide">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-1-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-2-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-2-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-2-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-2-4.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-2-1.jpg">
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>寺庙内殿阵列着赖家之马具、阵旗、北条政子为子祈求冥福所寄放之宋版放光般若经等珍贵古物，深受众多的学者、艺术家和文学家的喜爱。随后前往寺庙周边的竹林小径、指月町，该处被评选为米其林2星的旅游胜地。穿过竹林小径，站在桥上，可以放眼桂川，蜿蜒屈曲的河道，潺潺流过的溪水，竹林里的清脆的鸟鸣，瞬间被带入空灵的境地，让人暂时忘却心中的纷扰与烦忧。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>菲利普岛是以神仙小企鹅闻名于世的度假胜地，栖息着许多世界上最小的、身高大约30厘米的神仙小企鹅，故当地人亦称之为“企鹅岛”。</p>
-                        	<p>岛上有风景优美的崎岖海岸、可爱憨厚的野生动物、令人垂涎的美食佳酿、丰富多彩的体验活动，最为著名的就是观看“企鹅归巢”。</p>
-                        	<p>小企鹅白天游到离岸一、二百公里的深海觅食。每当日落黄昏后，一只只娇小的企鹅嘴里衔满食物从这里经过，准备回去喂养巢穴中企鹅宝宝。</p>
+                    </section>
+                    <!--slide5-->
+                    <section class="swiper-slide slide5">
+                        <div class="slide-cover">
+                    		<img class="ani text3-1" src="sakura/img/text3-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.1" swiper-animate-delay="0s"/>
+                    		<img class="ani text3-2" src="sakura/img/text3-2.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0.2s"/>
                         </div>
+                    </section>
+                    <section class="swiper-slide">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-2-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-2-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-2-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-2-5.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-2-6.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-3-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-3-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-3-3.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-3-1.jpg">
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>位于静冈县伊东市西南方位的海岸线，熔岩流受到海水侵蚀，海岸上各种小崖细流，最终成型为如今断崖绝壁的壮观地理风貌。因其特异的风景吸引来大量的观光客，也是很多影视剧的人气拍摄地。沿海散步主要以【門脇埼灯台】和【門脇吊橋】为中心，全程9公里的【城崎野餐路线】和【城崎自然研究路】是让人们在不知不觉中享受城崎海岸的自然奇迹。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>走进澳洲本土纯净牧场，孩子可以亲手喂养小动物，为奶牛挤奶，骑着农场的小马驹随意闲逛，在繁星满天的夜晚，观看浩瀚的星空。还能尝到农场出产的新鲜牛奶、百分百绿色且手工制作的食物，好吃又营养。</p>
+                    </section>
+                    <!--slide6-->
+                    <section class="swiper-slide slide6">
+                        <div class="slide-cover">
+                    		<img class="ani text4-1" src="sakura/img/text4-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
+                    		<img class="ani text4-2" src="sakura/img/text4-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
                         </div>
+                    </section>
+                    <section class="swiper-slide">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-3-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-3-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-3-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-3-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-4-1.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-4-1.jpg">
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>位于伊东市伊豆高原的大室山是一座海拔约580米的活火山，可以乘坐缆车登山，沿途一览壮丽雄姿。山顶有一个直径约300米的钵状火山口地貌，现在作为收费射箭场使用。火山口被开发成了约1千米的"钵口环形道"周边毫无遮挡，视野开阔，可以欣赏到绝美的景观。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>想要游览墨尔本周边著名的丹顿农山脉，最有童心的方式便是搭乘澳洲最古老的蒸气火车——普芬比利（Puffin Billy）蒸汽小火车了。</p>
-                        	<p>缓缓的穿行于秀丽的丹顿农山脉中，一路经过山林，草原，湖泊，满眼都是湖光山色，绿树成荫。而小火车哐当哐当的声音将带着你渐渐进入那些你记忆中的单纯的童年时代。</p>
+                    </section>
+                    <!--slide7-->
+                    <section class="swiper-slide slide7">
+                        <div class="slide-cover">
+                    		<img class="ani text5-1" src="sakura/img/text5-1.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
+                    		<img class="ani text5-2" src="sakura/img/text5-2.png" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
                         </div>
+                    </section>
+                    <section class="swiper-slide">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-4-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-4-4.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-4-5.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-5-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-5-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-5-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-5-4.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-5-1.jpg">
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>POLA美术馆的设计理念是与箱根富饶的大自然和谐共存，尽量控制地上部分的建筑物高度，将美术馆的大部分都建造在地下，从外观上来谋求与森林景观的融合。让您虽然在美术馆内，却能感受到森林之绿、天空之蓝、随风而动的树梢，体验自然光的演绎。通过箱根美丽的大自然和阳光四溢的空间而营造出的美的世界，为前来参观的客人提供一段高品味的时光。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>SKYPOINT位于Q1大厦，也就是Queensland Number One。SKYPOINT观景层，位于77和78层 Q1 Resort，可以让你360°瞭望黄金海岸的美景！在42.7s的时间内，你将从底层直达77层。这里也是全澳洲唯一一个可以看见海岸沙滩的观景层。</p>
+                    </section>
+                    <!--slide8-->
+                    <section class="swiper-slide slide8">
+                        <div class="slide-cover">
+                    		<img class="ani text6-1" src="sakura/img/text6-1.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
+                    		<img class="ani text6-2" src="sakura/img/text6-2.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3" swiper-animate-delay="0s"/>
                         </div>
+                    </section>
+                    <section class="swiper-slide">
                         <div class="hl-slide-box">
                             <div class="swiper-container hl-swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-5-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-5-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-5-4.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-6-1.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-6-2.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-6-3.jpg" alt=""></div></div>
+                                    <div class="swiper-slide"><div class="swp-img"><img src="sakura/img/hl-6-4.jpg" alt=""></div></div>
                                 </div>
+                                <div class="swiper-pagination swiper-pagination-hl"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dpl-hl-item">
-                        <div class="hl-img">
-                            <img src="australia/img/hl-6-1.jpg">
+                        <div class="hl-detail-text">
+                        	<h2>怎么玩？</h2>
+                        	<p>相传在江户时代末期就有了寄木细工工艺，距今大约有200余年的历史。以其工艺精湛细致、造型美观大方而享誉世界。是一种拼木工艺，把各种天然色彩木材重新叠拼接成图样，再用刨刀削薄后贴上盒子或是抽屉等，而制作出各种工艺品。本次体验是通过对各种木材的拼接，而制成独一无二的木质杯垫。作为箱根游的纪念品，非常有人气。</p>
                         </div>
-                        <div class="hl-txt">
-                        	<p>澳大利亚最著名的海滩之一邦迪海滩举世闻名。相比其他任何澳大利亚的特色而言，它更常出现在明信片、电视节目和电影中。</p>
-                        	<p>你可以好好享受自然美景、纯净的海滩和公共花园，还有闪闪发光的海港，当然更有能让吃货们热血沸腾的餐馆和各种市场。</p>
+                    </section>
+                    
+                    <!--slide10-->
+                    <section class="swiper-slide slide10">
+                        <div class="s-title">
+                            <span>推荐行程</span>
+                            <em></em>
                         </div>
-                        <div class="hl-slide-box">
-                            <div class="swiper-container hl-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-6-2.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-6-3.jpg" alt=""></div></div>
-                                    <div class="swiper-slide"><div class="swp-img"><img src="australia/img/hl-6-4.jpg" alt=""></div></div>
+                        <div class="dpl-trip-detail">
+                        	<div class="dpl-trip-style2">
+                        		<div class="swiper-container scroll-trip-container">
+                        			<div class="swiper-wrapper">
+                        				<div class="swiper-slide swiper-slide-active">
+                        					<ul class=" dpl-trip-list">
+			                        			<li class="dpl-trip-item">
+			                        				<span class="dpl-trip-num">Day1</span>
+			                        				<div class="dpl-trip-info">
+			                        					<h4>国内   → 东京</h4>
+			                        					<div class="dpl-trip-text">
+			                        						<p class="text-1">在机上好好休息，期待即将到来的精彩旅程</p>
+			                        						<p class="text-1">酒店周边闲逛，欣赏东京夜景</p>
+			                        						<p class="text-2">抵达东京，前往市区4星级酒店入住休息；随后自由活动，在酒店周边感受东京国际化都市的魅力。</p>
+			                        					</div>
+			                        				</div>
+			                        			</li>
+			                        			<li class="dpl-trip-item">
+			                        				<span class="dpl-trip-num">Day2</span>
+			                        				<div class="dpl-trip-info">
+			                        					<h4>东京   → 箱根</h4>
+			                        					<div class="dpl-trip-text">
+			                        						<p class="text-1">富士山 - 寄木细工体验 - 宝丽美术馆（美术展及下午茶）- 温泉街闲逛</p>
+			                        						<p class="text-2">早晨乘坐专车前往日本的象征——富士山一览壮丽风光，随后前往体验箱根地区最具代表的手工工艺，下午前往艺术气息浓厚的美术馆沉浸在艺术世界，在艺术馆享用精美的下午茶，傍晚前往温泉街闲逛，傍晚在酒店品尝地道日式晚餐。</p>
+			                        					</div>
+			                        				</div>
+			                        			</li>
+			                        			<li class="dpl-trip-item">
+			                        				<span class="dpl-trip-num">Day3</span>
+			                        				<div class="dpl-trip-info">
+			                        					<h4>箱根   → 伊豆</h4>
+			                        					<div class="dpl-trip-text">
+			                        						<p class="text-1">河津町赏樱 - 修善寺 - 修善寺竹林 - 河津町夜樱（根据开放时间适时安排）</p>
+			                        						<p class="text-2">今天可以睡到自然醒，随后乘坐专车前往河津町赏樱，中午在樱花树下野餐，感受日式赏樱的乐趣。下午前往修善寺观光，感受大自然的魅力与古庙的庄严。傍晚再次前往河津町赏樱，不同于白昼，夜晚的樱花飘着暗香，别有一番风味。</p>
+			                        					</div>
+			                        				</div>
+			                        			</li>
+			                        			<li class="dpl-trip-item">
+			                        				<span class="dpl-trip-num">Day4</span>
+			                        				<div class="dpl-trip-info">
+			                        					<h4>伊豆   → 东京</h4>
+			                        					<div class="dpl-trip-text">
+			                        						<p class="text-1">大室山 - 城崎 - 海岸银座</p>
+			                        						<p class="text-2">早晨乘坐专车一路沿海眺风景，前往著名的城崎海岸欣赏大自然的鬼斧神工之妙。下午返回东京前往举世闻名的时尚大道银座，感受东京潮流的撞击。</p>
+			                        					</div>
+			                        				</div>
+			                        			</li>
+			                        			<li class="dpl-trip-item">
+			                        				<span class="dpl-trip-num">Day5</span>
+			                        				<div class="dpl-trip-info">
+			                        					<h4>东京   → 国内</h4>
+			                        					<div class="dpl-trip-text">
+			                        						<p class="text-1">早餐后自由活动 - 飞机起飞前送至机场</p>
+			                        						<p class="text-2">今天可以睡到自然醒，随后自由活动，根据航班时间搭乘飞机，返回温馨的家，结束愉快的旅行。</p>
+			                        					</div>
+			                        				</div>
+			                        			</li>
+			                        		</ul>
+			                        	</div>
+                        			</div>
+                        			<div class="swiper-scrollbar"></div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </section>
+                    <!--slide11-->
+                    <section class="swiper-slide slide11">
+                        <div class="s-title">
+                            <span>价格说明</span>
+                            <em></em>
+                        </div>
+                        <div class="s10-box">
+                            <div class="dpl-price-box">
+                                <div class="dpl-price-item">
+                                    <h4>参考报价</h4>
+                                    <div class="dpl-price-cont">
+                                        <p><span class="pr1"><i>1.4</i>万/人</span><span class="pr2">该价格为6人定制参考价格<br>最终价格以实际出行人数为准</span></p>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格包含</h4>
+                                    <div class="dpl-price-cont">
+                                    	<img src="sakura/img/price.png"/>
+                                    </div>
+                                </div>
+                                <div class="dpl-price-item">
+                                    <h4>价格不含</h4>
+                                    <div class="dpl-price-cont">往返机票、签证、午餐和晚餐费用、以及费用包含中未提及的一切费用</div>
                                 </div>
                             </div>
+                            <div class="dpl-footer">
+                                <p>以上产品最终解释权归6人游所有</p>
+                                <span class="dpl-footer-label"></span>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </div>
-            <!-- //参考行程 -->
-            <div class="dpl-trip">
-                <div class="dpl-title dpl-trip-title">
-                    <img src="australia/img/nav-02.png"/>
+                <div class="arrow-box">
+                    <img src="sakura/img/arrow.png" id="array">
                 </div>
-                <div class="dpl-trip-detail">
-                    <div class="swiper-container intro-case-container">
-                        <div class="swiper-wrapper intro-case-wrapper">
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY1</span>
-                                        <span class="case-city"><i></i>悉尼</span>
-                                        <img src="australia/img/trip-pic-01.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">国内</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">悉尼</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 搭乘国际航班，前往悉尼。抵达后，入住酒店休息。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide day2">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY2</span>
-                                        <span class="case-city"><i></i>悉尼</span>
-                                        <img src="australia/img/trip-pic-02.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">悉尼</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 悉尼大学-皇家植物园-海德公园-圣玛利亚大教堂</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY3</span>
-                                        <span class="case-city"><i></i>悉尼</span>
-                                        <img src="australia/img/trip-pic-03.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">悉尼</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 悉尼歌剧院-悉尼海港大桥-悉尼鱼市场-邦迪海滩-新南威尔士艺术馆</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY4</span>
-                                        <span class="case-city"><i></i>黄金海岸</span>
-                                        <img src="australia/img/trip-pic-04.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">悉尼</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">黄金海岸</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 抵达农场后享用BBQ、三明治、蔬菜色拉等午餐、午餐后农场主家庭一起喂食动物，见就弹，观赏野生袋鼠，晚上和农场主一起享用BBQ晚餐。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY5</span>
-                                        <span class="case-city"><i></i>黄金海岸</span>
-                                        <img src="australia/img/trip-pic-05.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">黄金海岸</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 来到位于海滩边的观景台Skypoint，搭乘很快的直升电梯，43秒来到77层。绵延几十公里长的海岸线一览无遗缤纷绚丽的日落全景尽收眼底。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY6</span>
-                                        <span class="case-city"><i></i>布里斯班</span>
-                                        <img src="australia/img/trip-pic-06.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">布里斯班</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">海豚岛</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 乘坐渡轮，前往Tangalooma度假村。</p>
-                                        <p>• 下午走进海岛丛林，探索原住民与大自然的紧密关联，一起去寻找各种可以食用的植物，了解不同植物和树木的用途。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY7</span>
-                                        <span class="case-city"><i></i>海豚岛</span>
-                                        <img src="australia/img/trip-pic-07.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">海豚岛</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 搭乘天阁露玛海洋探索号穿越海洋世界，邂逅生活在摩顿湾的海洋动物。</p>
-                                        <p>• 傍晚喂食野生海豚，体验与野生海豚亲密无间相伴的美妙感受。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY8</span>
-                                        <span class="case-city"><i></i>海豚岛</span>
-                                        <img src="australia/img/trip-pic-08.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">海豚岛</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 上午搭乘四轮驱动大巴去到辽阔的沙原，体验从沙丘上疾驰而下的激情和乐趣。</p>
-                                        <p>• 下午观摩工作人员喂笑翠鸟的有趣场景。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY9</span>
-                                        <span class="case-city"><i></i>海豚岛</span>
-                                        <img src="australia/img/trip-pic-09.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">海豚岛</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">布里斯班</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 布里斯班市区观光，袋鼠角，文化中心等。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY10</span>
-                                        <span class="case-city"><i></i>布里斯班</span>
-                                        <img src="australia/img/trip-pic-10.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">布里斯班</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">墨尔本</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 菲兹路易公园-库克船长小屋-有轨电车-维多利亚艺术中心</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY11</span>
-                                        <span class="case-city"><i></i>墨尔本</span>
-                                        <img src="australia/img/trip-pic-11.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">墨尔本</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 前往丹顿地区，乘坐古老的蒸汽小火车。</p>
-                                        <p>• 在企鹅岛观看企鹅列队归巢的壮观景象。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide case-slide">
-                                <div class="slide-case">
-                                    <div class="case-img">
-                                        <span class="case-day">DAY12</span>
-                                        <span class="case-city"><i></i>墨尔本</span>
-                                        <img src="australia/img/trip-pic-12.jpg" alt="">
-                                    </div>
-                                    <div class="case-line">
-                                        <div class="case-line-box">
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">墨尔本</span>
-                                            </div>
-                                            <div class="line-item">
-                                                <span class="line-dot"><i class="dot"></i></span>
-                                                <span class="line-name">国内</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-desc">
-                                        <p>• 根据航班时间，安排送机，结束趣味的澳洲之旅</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 分页器 -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- //价格说明 -->
-            <div class="dpl-price-desc">
-                <div class="dpl-title dpl-price-title">
-                    <img src="australia/img/nav-03.png"/>
-                </div>
-                <div class="dpl-price-box">
-                    <div class="dpl-price-item">
-                        <h4>参考报价</h4>
-                        <div class="dpl-price-cont">
-                            <p><span class="pr1"><i>1.5</i>万起/人</span><span class="pr2">该价格为6人定制参考价<br>最终价格以实际出行人数为准</span></p>
-                        </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格包含</h4>
-                        <div class="dpl-price-cont dpl-price-inner">
-                            <img src="australia/img/price-pic.png" >
-                        </div>
-                    </div>
-                    <div class="dpl-price-item">
-                        <h4>价格不含</h4>
-                        <div class="dpl-price-cont">往返机票、签证费、午餐和晚餐、费用包含中未提及的一切费用</div>
-                    </div>
-                </div>
-            </div>
-            <div class="dpl-footer">
-                <p>以上产品最终解释权归6人游所有</p>
-                <span class="dpl-footer-label"></span>
             </div>
         </div>
         <!-- 分享弹层 -->
@@ -627,20 +458,45 @@
         </div>
     </div>
     <script src="common/js/swiper.min.js"></script>
+    <script src="common/js/swiper.animate1.0.2.min.js"></script>
     <script>
-        var swiper = new Swiper('.intro-case-container', {
-            pagination: '.swiper-pagination',
-            paginationType: 'fraction',
+        var mySwiper = new Swiper ('.page-container', {
+            direction: 'vertical',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            watchSlidesProgress: true,
+            onSetTransition: function(swiper, speed) {
+                for (var i = 0; i < swiper.slides.length; i++){
+                    es = swiper.slides[i].style;
+                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+                }
+            },
+        })
+        
+	    var Trswiper = new Swiper('.scroll-trip-container', {
+	      direction: 'vertical',
+	      slidesPerView: 'auto',
+	      freeMode: true,
+	      scrollbar: '.swiper-scrollbar',
+	      mousewheel: true,
+	    });
+  
+        var hlSwiper = new Swiper('.hl-swiper', {
+        	pagination : '.swiper-pagination-hl',
+        	paginationType : 'progress',
             slidesPerView: 'auto',
             centeredSlides: true,
-            paginationClickable: true,
-            spaceBetween: 15
-        });
-        var hlSwiper = new Swiper('.hl-swiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 10
         });
     </script>
-    <script src="/statics/app/scheme/js/common_detail.js?v=20170922" type="text/javascript"></script>
+    <script src="/statics/app/scheme/js/common_detail.js?v=20170913" type="text/javascript"></script>
 </body>
 </html> 
